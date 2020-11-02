@@ -6,24 +6,35 @@ Created on Wed Oct 14 13:02:13 2020
 @author: danaukes
 """
 
+# Import the MQTT library
+import paho.mqtt.client as mqtt			
 
-import paho.mqtt.client as mqtt			# Import the MQTT library
-import time					# The time library is useful for delays
+# The time library is useful for delays
+import time					
  
 # Our "on message" event
-def messageFunction (client, userdata, message):
+def callback(client, userdata, message):
 	topic = str(message.topic)
 	message = str(message.payload.decode("utf-8"))
 	print(topic +': '+ message)
- 
- 
-ourClient = mqtt.Client("makerio_mqtt")		# Create a MQTT client object
-ourClient.connect("test.mosquitto.org", 1883)	# Connect to the test MQTT broker
-ourClient.subscribe("EGR_304_DMA")			# Subscribe to the topic AC_unit
-ourClient.on_message = messageFunction		# Attach the messageFunction to subscription
-ourClient.loop_start()				# Start the MQTT client
- 
+
+# Create a MQTT client object
+my_client = mqtt.Client("EGR304_mqtt_client")		
+
+# Connect to a test MQTT broker
+my_client.connect("test.mosquitto.org", 1883)	
+
+# Subscribe to the topic "EGR_304_DMA"
+my_client.subscribe("EGR_304_DMA")			
+
+# Attach the messageFunction to subscription
+my_client.on_message = callback		
+
+# Start the MQTT client
+my_client.loop_start()				
  
 # Main program loop
+
 while(1):
-	time.sleep(1)				# Sleep for a second
+    # Sleep for a second
+    time.sleep(1)
