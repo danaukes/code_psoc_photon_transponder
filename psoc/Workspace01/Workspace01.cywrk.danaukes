@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\Design01\Design01.cydwr\Pins">
 <ExpandedNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\Design01</v>
@@ -244,10 +244,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Design01.cydsn\main.c" />
+<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Design01.cydsn\Design01.cydwr" />
-<name v=".\Design01.cydsn\Generated_Source\PSoC5\myUSB_cdc.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -255,7 +254,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1467, 856" SelectedTabbedMdiWindow="d2736453-b9e9-4c29-8e69-99425a6a0619"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="494eaa39-696c-43bb-ba66-0e904b0f4d5f" /><DocumentWindow Key="C:\Users\danaukes\code\code_photon\psoc_photon_cloud_transponder\psoc\Workspace01\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="a9a82c4d-0f5b-4735-abfb-fab614927888" /><DocumentWindow Key="C:\Users\danaukes\code\code_photon\psoc_photon_cloud_transponder\psoc\Workspace01\Design01.cydsn\main.c" Guid="a371d516-cdb5-4547-9873-05d0a05e2d51" /><DocumentWindow Key="C:\Users\danaukes\code\code_photon\psoc_photon_cloud_transponder\psoc\Workspace01\Design01.cydsn\Design01.cydwr" Guid="d2736453-b9e9-4c29-8e69-99425a6a0619" /><DocumentWindow Key="C:\Users\danaukes\code\code_photon\psoc_photon_cloud_transponder\psoc\Workspace01\Design01.cydsn\Generated_Source\PSoC5\myUSB_cdc.h" Guid="1798c2e2-3147-4124-9764-8720461627f7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1467, 856" SelectedTabbedMdiWindow="67285279-72ab-4279-8056-cee473c0a77b"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="494eaa39-696c-43bb-ba66-0e904b0f4d5f" /><DocumentWindow Key="C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace01\Design01.cydsn\main.c" Guid="4fc054c6-6f23-4488-865d-d05320d66bd8" /><DocumentWindow Key="C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace01\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="eefe335a-1581-4a79-ad97-8793c5060f70" /><DocumentWindow Key="C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace01\Design01.cydsn\Design01.cydwr" Guid="67285279-72ab-4279-8056-cee473c0a77b" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

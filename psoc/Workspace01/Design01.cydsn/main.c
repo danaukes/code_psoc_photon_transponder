@@ -41,7 +41,7 @@ int main(void)
         //write message to USB
 
         
-        if (UART_photon_RX_BUFFER_SIZE>0)
+        if (UART_photon_GetRxBufferSize()>0)
         {
             c = UART_photon_GetChar();
             while (!myUSB_CDCIsReady());
