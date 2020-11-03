@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 1
 
 
    1              		.syntax unified
@@ -45,121 +45,142 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
   15:main.c        **** #include <stdio.h>
   16:main.c        **** #include "project.h"
   17:main.c        **** 
-  18:main.c        **** char c;
-  19:main.c        **** 
-  20:main.c        **** uint8 pdata[64];
-  21:main.c        **** uint16 len;
-  22:main.c        **** 
-  23:main.c        **** int main(void)
-  24:main.c        **** {
-  28              		.loc 1 24 0
+  18:main.c        **** //internal variable
+  19:main.c        **** char c;
+  20:main.c        **** 
+  21:main.c        **** //pointer to USB serial data
+  22:main.c        **** uint8 pdata[64];
+  23:main.c        **** 
+  24:main.c        **** //length variable
+  25:main.c        **** uint16 len;
+  26:main.c        **** 
+  27:main.c        **** int main(void)
+  28:main.c        **** {
+  28              		.loc 1 28 0
   29              		.cfi_startproc
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 2
+
+
   30              		@ args = 0, pretend = 0, frame = 0
   31              		@ frame_needed = 0, uses_anonymous_args = 0
   32 0000 10B5     		push	{r4, lr}
   33              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 2
-
-
   34              		.cfi_offset 4, -8
   35              		.cfi_offset 14, -4
-  25:main.c        ****     //the following code gets run once
-  26:main.c        ****     
-  27:main.c        ****     //enable global interrupts
-  28:main.c        ****     CyGlobalIntEnable;
-  36              		.loc 1 28 0
+  29:main.c        ****     //the following code gets run once
+  30:main.c        ****     
+  31:main.c        ****     //enable global interrupts
+  32:main.c        ****     CyGlobalIntEnable;
+  36              		.loc 1 32 0
   37              		.syntax unified
-  38              	@ 28 "main.c" 1
+  38              	@ 32 "main.c" 1
   39 0002 62B6     		CPSIE   i
   40              	@ 0 "" 2
-  29:main.c        ****     //Start the USB subsystem
-  30:main.c        ****     UART_photon_Start();
-  41              		.loc 1 30 0
+  33:main.c        **** 
+  34:main.c        ****     //Start the USB subsystem
+  35:main.c        ****     UART_photon_Start();
+  41              		.loc 1 35 0
   42              		.thumb
   43              		.syntax unified
   44 0004 FFF7FEFF 		bl	UART_photon_Start
   45              	.LVL0:
-  31:main.c        ****     myUSB_Start(0,myUSB_5V_OPERATION);
-  46              		.loc 1 31 0
+  36:main.c        ****   
+  37:main.c        ****     //Start the USB Serial Peripheral
+  38:main.c        ****     myUSB_Start(0,myUSB_5V_OPERATION);
+  46              		.loc 1 38 0
   47 0008 0121     		movs	r1, #1
   48 000a 0020     		movs	r0, #0
   49 000c FFF7FEFF 		bl	myUSB_Start
   50              	.LVL1:
   51              	.L2:
-  32:main.c        ****     while(0 == myUSB_GetConfiguration())
-  52              		.loc 1 32 0 discriminator 1
+  39:main.c        ****     
+  40:main.c        ****     //wait until the USB configuration is loaded
+  41:main.c        ****     while(0 == myUSB_GetConfiguration())
+  52              		.loc 1 41 0 discriminator 1
   53 0010 FFF7FEFF 		bl	myUSB_GetConfiguration
   54              	.LVL2:
   55 0014 0028     		cmp	r0, #0
   56 0016 FBD0     		beq	.L2
-  33:main.c        ****     {
-  34:main.c        ****     }
-  35:main.c        ****     myUSB_CDC_Init();
-  57              		.loc 1 35 0
+  42:main.c        ****     {
+  43:main.c        ****     }
+  44:main.c        ****     //prepare the USB Serial System for receiving data
+  45:main.c        ****     myUSB_CDC_Init();
+  57              		.loc 1 45 0
   58 0018 FFF7FEFF 		bl	myUSB_CDC_Init
   59              	.LVL3:
   60              	.L5:
-  36:main.c        ****     
-  37:main.c        **** 
-  38:main.c        ****     for(;;)
-  39:main.c        ****     {
-  40:main.c        ****         //wait until myUSB subsystem is ready
-  41:main.c        ****         //write message to USB
-  42:main.c        **** 
-  43:main.c        ****         
-  44:main.c        ****         if (UART_photon_GetRxBufferSize()>0)
-  61              		.loc 1 44 0
+  46:main.c        ****     
+  47:main.c        ****     //this is like a while loop
+  48:main.c        ****     for(;;)
+  49:main.c        ****     {
+  50:main.c        **** 
+  51:main.c        ****         //if there are characters in the UART receive buffer
+  52:main.c        ****         if (UART_photon_GetRxBufferSize()>0)
+  61              		.loc 1 52 0
   62 001c FFF7FEFF 		bl	UART_photon_GetRxBufferSize
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 3
+
+
   63              	.LVL4:
   64 0020 58B1     		cbz	r0, .L3
-  45:main.c        ****         {
-  46:main.c        ****             c = UART_photon_GetChar();
-  65              		.loc 1 46 0
+  53:main.c        ****         {
+  54:main.c        ****             //retrieve one character and save in c
+  55:main.c        ****             c = UART_photon_GetChar();
+  65              		.loc 1 55 0
   66 0022 FFF7FEFF 		bl	UART_photon_GetChar
   67              	.LVL5:
   68 0026 144B     		ldr	r3, .L11
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 3
-
-
   69 0028 1870     		strb	r0, [r3]
   70              	.L4:
-  47:main.c        ****             while (!myUSB_CDCIsReady());
-  71              		.loc 1 47 0 discriminator 1
+  56:main.c        ****             //wait until USB is ready to send
+  57:main.c        ****             while (!myUSB_CDCIsReady());
+  71              		.loc 1 57 0 discriminator 1
   72 002a FFF7FEFF 		bl	myUSB_CDCIsReady
   73              	.LVL6:
   74 002e 0028     		cmp	r0, #0
   75 0030 FBD0     		beq	.L4
-  48:main.c        ****             myUSB_PutChar(c);
-  76              		.loc 1 48 0
+  58:main.c        ****             //put character in
+  59:main.c        ****             myUSB_PutChar(c);
+  76              		.loc 1 59 0
   77 0032 114B     		ldr	r3, .L11
   78 0034 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
   79 0036 FFF7FEFF 		bl	myUSB_PutChar
   80              	.LVL7:
   81              	.L3:
-  49:main.c        ****         }
-  50:main.c        ****         if (myUSB_DataIsReady())
-  82              		.loc 1 50 0
+  60:main.c        ****         }
+  61:main.c        ****         
+  62:main.c        ****         //if there is data in the USB receive buffer`
+  63:main.c        ****         if (myUSB_DataIsReady())
+  82              		.loc 1 63 0
   83 003a FFF7FEFF 		bl	myUSB_DataIsReady
   84              	.LVL8:
   85 003e 0028     		cmp	r0, #0
   86 0040 ECD0     		beq	.L5
-  51:main.c        ****         {
-  52:main.c        ****             len = myUSB_GetCount();
-  87              		.loc 1 52 0
+  64:main.c        ****         {
+  65:main.c        ****             //read how many bytes are available
+  66:main.c        ****             len = myUSB_GetCount();
+  87              		.loc 1 66 0
   88 0042 FFF7FEFF 		bl	myUSB_GetCount
   89              	.LVL9:
   90 0046 0D4B     		ldr	r3, .L11+4
   91 0048 1880     		strh	r0, [r3]	@ movhi
-  53:main.c        ****             if (len>64) len=64;
-  92              		.loc 1 53 0
+  67:main.c        ****             
+  68:main.c        ****             //if there are more than 64 bytes, restrict to first 64
+  69:main.c        ****             if (len>64) len=64;
+  92              		.loc 1 69 0
   93 004a 4028     		cmp	r0, #64
   94 004c 01D9     		bls	.L6
-  95              		.loc 1 53 0 is_stmt 0 discriminator 1
+  95              		.loc 1 69 0 is_stmt 0 discriminator 1
   96 004e 4022     		movs	r2, #64
   97 0050 1A80     		strh	r2, [r3]	@ movhi
   98              	.L6:
-  54:main.c        ****             len = myUSB_GetData(pdata,len);
-  99              		.loc 1 54 0 is_stmt 1
+  70:main.c        ****             
+  71:main.c        ****             //read data and return the actual number of bytes read to len
+  72:main.c        ****             len = myUSB_GetData(pdata,len);
+  99              		.loc 1 72 0 is_stmt 1
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 4
+
+
  100 0052 0A4C     		ldr	r4, .L11+4
  101 0054 2188     		ldrh	r1, [r4]
  102 0056 0A48     		ldr	r0, .L11+8
@@ -168,31 +189,29 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  105 005c 2080     		strh	r0, [r4]	@ movhi
  106              	.LVL11:
  107              	.LBB2:
-  55:main.c        ****             for (int jj=0;jj<len;jj++)
- 108              		.loc 1 55 0
+  73:main.c        ****             
+  74:main.c        ****             //iterate through all received bytes 
+  75:main.c        ****             for (int jj=0;jj<len;jj++)
+ 108              		.loc 1 75 0
  109 005e 0024     		movs	r4, #0
  110 0060 04E0     		b	.L7
  111              	.LVL12:
  112              	.L8:
-  56:main.c        ****             {
-  57:main.c        ****                 //while (!myUSB_CDCIsReady());
-  58:main.c        ****                 //myUSB_PutChar(pdata[jj]);
-  59:main.c        ****                 UART_photon_PutChar(pdata[jj]);
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 4
-
-
- 113              		.loc 1 59 0 discriminator 3
+  76:main.c        ****             {
+  77:main.c        ****                 //send one character at a time into UART 
+  78:main.c        ****                 UART_photon_PutChar(pdata[jj]);
+ 113              		.loc 1 78 0 discriminator 3
  114 0062 074B     		ldr	r3, .L11+8
  115 0064 185D     		ldrb	r0, [r3, r4]	@ zero_extendqisi2
  116 0066 FFF7FEFF 		bl	UART_photon_PutChar
  117              	.LVL13:
-  55:main.c        ****             for (int jj=0;jj<len;jj++)
- 118              		.loc 1 55 0 discriminator 3
+  75:main.c        ****             {
+ 118              		.loc 1 75 0 discriminator 3
  119 006a 0134     		adds	r4, r4, #1
  120              	.LVL14:
  121              	.L7:
-  55:main.c        ****             for (int jj=0;jj<len;jj++)
- 122              		.loc 1 55 0 is_stmt 0 discriminator 1
+  75:main.c        ****             {
+ 122              		.loc 1 75 0 is_stmt 0 discriminator 1
  123 006c 034B     		ldr	r3, .L11+4
  124 006e 1B88     		ldrh	r3, [r3]
  125 0070 9C42     		cmp	r4, r3
@@ -219,6 +238,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  146              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
  147              		.file 6 "Generated_Source\\PSoC5/UART_photon.h"
  148              		.file 7 "Generated_Source\\PSoC5/myUSB.h"
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 5
+
+
  149              		.file 8 "Generated_Source\\PSoC5/myUSB_cdc.h"
  150              		.section	.debug_info,"",%progbits
  151              	.Ldebug_info0:
@@ -238,9 +260,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  165 0026 04       		.byte	0x4
  166 0027 05       		.byte	0x5
  167 0028 696E7400 		.ascii	"int\000"
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 5
-
-
  168 002c 03       		.uleb128 0x3
  169 002d 04       		.byte	0x4
  170 002e 07       		.byte	0x7
@@ -279,6 +298,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  203 006a 05       		.byte	0x5
  204 006b 53020000 		.4byte	.LASF7
  205 006f 03       		.uleb128 0x3
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 6
+
+
  206 0070 04       		.byte	0x4
  207 0071 07       		.byte	0x7
  208 0072 2C010000 		.4byte	.LASF8
@@ -298,9 +320,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  222 008c 08       		.byte	0x8
  223 008d 04       		.byte	0x4
  224 008e 5E010000 		.4byte	.LASF12
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 6
-
-
  225 0092 03       		.uleb128 0x3
  226 0093 04       		.byte	0x4
  227 0094 04       		.byte	0x4
@@ -323,7 +342,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  244 00bc 06       		.uleb128 0x6
  245 00bd 77010000 		.4byte	.LASF35
  246 00c1 01       		.byte	0x1
- 247 00c2 17       		.byte	0x17
+ 247 00c2 1B       		.byte	0x1b
  248 00c3 25000000 		.4byte	0x25
  249 00c7 00000000 		.4byte	.LFB64
  250 00cb 84000000 		.4byte	.LFE64-.LFB64
@@ -337,8 +356,11 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  258 00e2 08       		.uleb128 0x8
  259 00e3 6A6A00   		.ascii	"jj\000"
  260 00e6 01       		.byte	0x1
- 261 00e7 37       		.byte	0x37
+ 261 00e7 4B       		.byte	0x4b
  262 00e8 25000000 		.4byte	0x25
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 7
+
+
  263 00ec 00000000 		.4byte	.LLST0
  264 00f0 09       		.uleb128 0x9
  265 00f1 6A000000 		.4byte	.LVL13
@@ -358,9 +380,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  279 0114 30       		.byte	0x30
  280 0115 0B       		.uleb128 0xb
  281 0116 01       		.uleb128 0x1
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 7
-
-
  282 0117 51       		.byte	0x51
  283 0118 01       		.uleb128 0x1
  284 0119 31       		.byte	0x31
@@ -399,6 +418,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  317 0170 03       		.byte	0x3
  318 0171 00000000 		.4byte	pdata
  319 0175 00       		.byte	0
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 8
+
+
  320 0176 00       		.byte	0
  321 0177 0D       		.uleb128 0xd
  322 0178 51010000 		.4byte	.LASF18
@@ -410,7 +432,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  328 0188 0F       		.uleb128 0xf
  329 0189 6300     		.ascii	"c\000"
  330 018b 01       		.byte	0x1
- 331 018c 12       		.byte	0x12
+ 331 018c 13       		.byte	0x13
  332 018d 84000000 		.4byte	0x84
  333 0191 05       		.uleb128 0x5
  334 0192 03       		.byte	0x3
@@ -418,9 +440,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  336 0197 10       		.uleb128 0x10
  337 0198 A4000000 		.4byte	0xa4
  338 019c A7010000 		.4byte	0x1a7
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 8
-
-
  339 01a0 11       		.uleb128 0x11
  340 01a1 7D000000 		.4byte	0x7d
  341 01a5 3F       		.byte	0x3f
@@ -428,7 +447,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  343 01a7 12       		.uleb128 0x12
  344 01a8 00000000 		.4byte	.LASF19
  345 01ac 01       		.byte	0x1
- 346 01ad 14       		.byte	0x14
+ 346 01ad 16       		.byte	0x16
  347 01ae 97010000 		.4byte	0x197
  348 01b2 05       		.uleb128 0x5
  349 01b3 03       		.byte	0x3
@@ -436,7 +455,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  351 01b8 0F       		.uleb128 0xf
  352 01b9 6C656E00 		.ascii	"len\000"
  353 01bd 01       		.byte	0x1
- 354 01be 15       		.byte	0x15
+ 354 01be 19       		.byte	0x19
  355 01bf B0000000 		.4byte	0xb0
  356 01c3 05       		.uleb128 0x5
  357 01c4 03       		.byte	0x3
@@ -459,6 +478,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  374 01eb 14       		.uleb128 0x14
  375 01ec BA010000 		.4byte	.LASF23
  376 01f0 BA010000 		.4byte	.LASF23
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 9
+
+
  377 01f4 07       		.byte	0x7
  378 01f5 2D01     		.2byte	0x12d
  379 01f7 13       		.uleb128 0x13
@@ -478,9 +500,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  393 0217 71       		.byte	0x71
  394 0218 13       		.uleb128 0x13
  395 0219 5C020000 		.4byte	.LASF27
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 9
-
-
  396 021d 5C020000 		.4byte	.LASF27
  397 0221 08       		.byte	0x8
  398 0222 28       		.byte	0x28
@@ -519,6 +538,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  431 0009 1B       		.uleb128 0x1b
  432 000a 0E       		.uleb128 0xe
  433 000b 55       		.uleb128 0x55
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 10
+
+
  434 000c 17       		.uleb128 0x17
  435 000d 11       		.uleb128 0x11
  436 000e 01       		.uleb128 0x1
@@ -538,9 +560,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  450 001c 00       		.byte	0
  451 001d 00       		.byte	0
  452 001e 03       		.uleb128 0x3
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 10
-
-
  453 001f 24       		.uleb128 0x24
  454 0020 00       		.byte	0
  455 0021 0B       		.uleb128 0xb
@@ -579,6 +598,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  488 0042 00       		.byte	0
  489 0043 06       		.uleb128 0x6
  490 0044 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 11
+
+
  491 0045 01       		.byte	0x1
  492 0046 3F       		.uleb128 0x3f
  493 0047 19       		.uleb128 0x19
@@ -598,9 +620,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  507 0056 01       		.uleb128 0x1
  508 0057 12       		.uleb128 0x12
  509 0058 06       		.uleb128 0x6
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 11
-
-
  510 0059 40       		.uleb128 0x40
  511 005a 18       		.uleb128 0x18
  512 005b 9742     		.uleb128 0x2117
@@ -639,6 +658,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  545 007d 898201   		.uleb128 0x4109
  546 0080 00       		.byte	0
  547 0081 11       		.uleb128 0x11
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 12
+
+
  548 0082 01       		.uleb128 0x1
  549 0083 31       		.uleb128 0x31
  550 0084 13       		.uleb128 0x13
@@ -658,9 +680,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  564 0094 0B       		.uleb128 0xb
  565 0095 8A8201   		.uleb128 0x410a
  566 0098 00       		.byte	0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 12
-
-
  567 0099 02       		.uleb128 0x2
  568 009a 18       		.uleb128 0x18
  569 009b 9142     		.uleb128 0x2111
@@ -699,6 +718,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  602 00bf 49       		.uleb128 0x49
  603 00c0 13       		.uleb128 0x13
  604 00c1 00       		.byte	0
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 13
+
+
  605 00c2 00       		.byte	0
  606 00c3 0F       		.uleb128 0xf
  607 00c4 34       		.uleb128 0x34
@@ -718,9 +740,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  621 00d2 00       		.byte	0
  622 00d3 00       		.byte	0
  623 00d4 10       		.uleb128 0x10
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 13
-
-
  624 00d5 01       		.uleb128 0x1
  625 00d6 01       		.byte	0x1
  626 00d7 49       		.uleb128 0x49
@@ -759,6 +778,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  659 00f8 2E       		.uleb128 0x2e
  660 00f9 00       		.byte	0
  661 00fa 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 14
+
+
  662 00fb 19       		.uleb128 0x19
  663 00fc 3C       		.uleb128 0x3c
  664 00fd 19       		.uleb128 0x19
@@ -778,9 +800,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  678 010b 3F       		.uleb128 0x3f
  679 010c 19       		.uleb128 0x19
  680 010d 3C       		.uleb128 0x3c
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 14
-
-
  681 010e 19       		.uleb128 0x19
  682 010f 6E       		.uleb128 0x6e
  683 0110 0E       		.uleb128 0xe
@@ -819,6 +838,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  716 0014 84000000 		.4byte	.LFE64-.LFB64
  717 0018 00000000 		.4byte	0
  718 001c 00000000 		.4byte	0
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 15
+
+
  719              		.section	.debug_ranges,"",%progbits
  720              	.Ldebug_ranges0:
  721 0000 00000000 		.4byte	.LFB64
@@ -827,7 +849,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  724 000c 00000000 		.4byte	0
  725              		.section	.debug_line,"",%progbits
  726              	.Ldebug_line0:
- 727 0000 BB010000 		.section	.debug_str,"MS",%progbits,1
+ 727 0000 B9010000 		.section	.debug_str,"MS",%progbits,1
  727      02007701 
  727      00000201 
  727      FB0E0D00 
@@ -838,9 +860,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  730              	.LASF29:
  731 0006 6D795553 		.ascii	"myUSB_DataIsReady\000"
  731      425F4461 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 15
-
-
  731      74614973 
  731      52656164 
  731      7900
@@ -879,6 +898,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  746      43313120 
  746      352E342E 
  746      31203230 
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 16
+
+
  746      31363036 
  747 00d1 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
  747      20726576 
@@ -898,9 +920,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  750      7400
  751              	.LASF6:
  752 013e 73686F72 		.ascii	"short unsigned int\000"
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 16
-
-
  752      7420756E 
  752      7369676E 
  752      65642069 
@@ -939,6 +958,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  767              	.LASF0:
  768 01ad 756E7369 		.ascii	"unsigned int\000"
  768      676E6564 
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 17
+
+
  768      20696E74 
  768      00
  769              	.LASF23:
@@ -958,9 +980,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  774      425F5374 
  774      61727400 
  775              	.LASF30:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 17
-
-
  776 01f4 6D795553 		.ascii	"myUSB_GetCount\000"
  776      425F4765 
  776      74436F75 
@@ -999,6 +1018,9 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  792      697400
  793              	.LASF7:
  794 0253 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccoHFYZh.s 			page 18
+
+
  794      20696E74 
  794      00
  795              	.LASF27:
@@ -1018,9 +1040,6 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 1
  800      50757443 
  800      68617200 
  801              	.LASF26:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccxZKTjf.s 			page 18
-
-
  802 028d 55415254 		.ascii	"UART_photon_GetChar\000"
  802      5F70686F 
  802      746F6E5F 

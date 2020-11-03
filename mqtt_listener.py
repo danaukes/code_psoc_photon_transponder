@@ -24,8 +24,8 @@ my_client = mqtt.Client("EGR304_mqtt_client")
 # Connect to a test MQTT broker
 my_client.connect("test.mosquitto.org", 1883)	
 
-# Subscribe to the topic "EGR_304_DMA"
-my_client.subscribe("EGR_304_DMA")			
+# Subscribe to the topic "EGR_304_XYZ"
+my_client.subscribe("EGR_304_XYZ")			
 
 # Attach the messageFunction to subscription
 my_client.on_message = callback		

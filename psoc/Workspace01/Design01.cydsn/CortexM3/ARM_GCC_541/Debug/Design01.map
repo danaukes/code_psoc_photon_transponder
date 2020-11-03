@@ -1545,29 +1545,29 @@ END GROUP
  .debug_abbrev  0x00001906      0x1a7 .\CortexM3\ARM_GCC_541\Debug\Design01.a(CyFlash.o)
  .debug_abbrev  0x00001aad      0x194 .\CortexM3\ARM_GCC_541\Debug\Design01.a(CySpc.o)
 
-.debug_line     0x00000000     0x2b81
+.debug_line     0x00000000     0x2b7f
  *(.debug_line)
- .debug_line    0x00000000      0x1bf .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_line    0x000001bf      0x1f2 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_line    0x000003b1      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x000004f2      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_line    0x00000726      0x2d4 .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB.o)
- .debug_line    0x000009fa      0x2ec .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_cdc.o)
- .debug_line    0x00000ce6      0x21b .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_drv.o)
- .debug_line    0x00000f01       0xe0 .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_episr.o)
- .debug_line    0x00000fe1      0x106 .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_pm.o)
- .debug_line    0x000010e7      0x3dc .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_std.o)
- .debug_line    0x000014c3       0x6f .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_vnd.o)
- .debug_line    0x00001532       0xb9 .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_Dp.o)
- .debug_line    0x000015eb      0x816 .\CortexM3\ARM_GCC_541\Debug\Design01.a(CyLib.o)
- .debug_line    0x00001e01      0x367 .\CortexM3\ARM_GCC_541\Debug\Design01.a(cyPm.o)
- .debug_line    0x00002168      0x2ca .\CortexM3\ARM_GCC_541\Debug\Design01.a(UART_photon.o)
- .debug_line    0x00002432      0x183 .\CortexM3\ARM_GCC_541\Debug\Design01.a(UART_photon_IntClock.o)
- .debug_line    0x000025b5       0x66 .\CortexM3\ARM_GCC_541\Debug\Design01.a(CyBootAsmGnu.o)
- .debug_line    0x0000261b       0x8f .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_cls.o)
- .debug_line    0x000026aa       0x5d .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_descr.o)
- .debug_line    0x00002707      0x21a .\CortexM3\ARM_GCC_541\Debug\Design01.a(CyFlash.o)
- .debug_line    0x00002921      0x260 .\CortexM3\ARM_GCC_541\Debug\Design01.a(CySpc.o)
+ .debug_line    0x00000000      0x1bd .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_line    0x000001bd      0x1f2 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x000003af      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x000004f0      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x00000724      0x2d4 .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB.o)
+ .debug_line    0x000009f8      0x2ec .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_cdc.o)
+ .debug_line    0x00000ce4      0x21b .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_drv.o)
+ .debug_line    0x00000eff       0xe0 .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_episr.o)
+ .debug_line    0x00000fdf      0x106 .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_pm.o)
+ .debug_line    0x000010e5      0x3dc .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_std.o)
+ .debug_line    0x000014c1       0x6f .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_vnd.o)
+ .debug_line    0x00001530       0xb9 .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_Dp.o)
+ .debug_line    0x000015e9      0x816 .\CortexM3\ARM_GCC_541\Debug\Design01.a(CyLib.o)
+ .debug_line    0x00001dff      0x367 .\CortexM3\ARM_GCC_541\Debug\Design01.a(cyPm.o)
+ .debug_line    0x00002166      0x2ca .\CortexM3\ARM_GCC_541\Debug\Design01.a(UART_photon.o)
+ .debug_line    0x00002430      0x183 .\CortexM3\ARM_GCC_541\Debug\Design01.a(UART_photon_IntClock.o)
+ .debug_line    0x000025b3       0x66 .\CortexM3\ARM_GCC_541\Debug\Design01.a(CyBootAsmGnu.o)
+ .debug_line    0x00002619       0x8f .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_cls.o)
+ .debug_line    0x000026a8       0x5d .\CortexM3\ARM_GCC_541\Debug\Design01.a(myUSB_descr.o)
+ .debug_line    0x00002705      0x21a .\CortexM3\ARM_GCC_541\Debug\Design01.a(CyFlash.o)
+ .debug_line    0x0000291f      0x260 .\CortexM3\ARM_GCC_541\Debug\Design01.a(CySpc.o)
 
 .debug_frame    0x00000000     0x210c
  *(.debug_frame)

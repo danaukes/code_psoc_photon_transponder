@@ -4,7 +4,7 @@
 
 const char delimiter='\r';
 
-const char topic[50]="EGR_304_XYZ";
+const char topic[]="EGR_304_XYZ";
 
 //counter variable for message_out array
 int ii_usb = 0;
