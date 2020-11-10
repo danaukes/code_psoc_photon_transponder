@@ -4,7 +4,9 @@
 
 const char delimiter='\r';
 
-const char topic[]="EGR_304_XYZ";
+const char client_name[]="EGR_304_Photon_Client_XYZ";
+const char topic_publish[]="EGR_304_XYZ";
+const char topic_subscribe[]="EGR_304_XYZ";
 
 //counter variable for message_out array
 int ii_usb = 0;
@@ -70,9 +72,9 @@ void setup() {
     //Opwn Rx/Tx pins at 9600 baud
     Serial1.begin(9600);
     //Set up MQTT client for publishing on topic variable
-    client.connect(topic);
+    client.connect(client_name);
     //Subscribe to topic variable with MQTT client
-    client.subscribe(topic);
+    client.subscribe(topic_subscribe);
     //Initialize t_last_send with current time
     t_last_send = Time.now();
 }
@@ -99,7 +101,7 @@ void loop() {
             //Serial.write("\r\n");
             
             //Publish the message to the MQTT client
-            client.publish(topic,message_out_usb);
+            client.publish(topic_publish,message_out_usb);
 
             //record the last send time as now
             t_last_send = Time.now();
@@ -145,7 +147,7 @@ void loop() {
             //Serial1.write("\r\n");
 
             //Publish the message to the MQTT client
-            client.publish(topic,message_out_rxtx);
+            client.publish(topic_publish,message_out_rxtx);
 
             //record the last send time as now
             t_last_send = Time.now();
@@ -173,11 +175,20 @@ void loop() {
     //if the current time is greater than 10 seconds since last send,
     if ((Time.now()-t_last_send)>10)
     {   
-        //send a keepalive message
-        client.publish(topic,"keepalive");
-        
-        //update last-sent time
-        t_last_send = Time.now();
+        if (client.isConnected())
+        {
+            //send a keepalive message
+            client.publish(topic_publish,"keepalive");
+            
+            //update last-sent time
+            t_last_send = Time.now();
+        }
+        else
+        {
+            client.connect(client_name);
+            Serial.write("client disconnected\r\n");
+            Serial1.write("client disconnected\r\n");
+        }
     }
 
     //make sure you run the mqtt client loop

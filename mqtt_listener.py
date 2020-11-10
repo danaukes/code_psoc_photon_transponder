@@ -19,7 +19,7 @@ def callback(client, userdata, message):
 	print(topic +': '+ message)
 
 # Create a MQTT client object
-my_client = mqtt.Client("EGR304_mqtt_client")		
+my_client = mqtt.Client("EGR_304_Python_Listener_XYZ")		
 
 # Connect to a test MQTT broker
 my_client.connect("test.mosquitto.org", 1883)	
