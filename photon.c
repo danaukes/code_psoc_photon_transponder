@@ -4,9 +4,9 @@
 
 const char delimiter='\r';
 
-const char client_name[]="EGR_304_Photon_Client_XYZ";
-const char topic_publish[]="EGR_304_XYZ";
-const char topic_subscribe[]="EGR_304_XYZ";
+const char client_name[]="EGR_304_Photon_Client_DMA";
+const char topic_publish[]="EGR_304_DMA";
+const char topic_subscribe[]="EGR_304_DMA";
 
 //counter variable for message_out array
 int ii_usb = 0;
