@@ -16,7 +16,7 @@ import time
 def callback(client, userdata, message):
 	topic = str(message.topic)
 	message = str(message.payload.decode("utf-8"))
-	print(topic +': '+ message)
+	print('Message received from ('+topic +'): '+ message)
 
 # Create a MQTT client object
 my_client = mqtt.Client("DMA_py")		
@@ -24,7 +24,7 @@ my_client = mqtt.Client("DMA_py")
 def connect(my_client):
 
     # Connect to a test MQTT broker
-    my_client.connect("embedded-systems.ddns.net", 1883)	
+    my_client.connect("idealab.ddns.net", 1883)	
     
     # Subscribe to the topic "EGR_304_XYZ"
     my_client.subscribe("EGR_304_DMA")			
@@ -40,6 +40,7 @@ connect(my_client)
 
 while(1):
     # Sleep for a second
+    
     time.sleep(1)
     if not my_client.is_connected():
         print('disconnected')
