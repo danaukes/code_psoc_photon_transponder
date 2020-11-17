@@ -26,8 +26,11 @@ char c=0;
 //store the last send time
 long t_last_send = 0;
 
+//store the last send time
+long t_reconnect = 0;
+
 //MQTT Client Class
-MQTT client("test.mosquitto.org", 1883, 30, callback);
+MQTT client("idealab.ddns.net", 1883, 30, callback);
 
 //declare the callback that fires when a subscribed topic comes in
 void callback(char* topic, byte* payload, unsigned int length) 
@@ -77,6 +80,8 @@ void setup() {
     client.subscribe(topic_subscribe);
     //Initialize t_last_send with current time
     t_last_send = Time.now();
+    //Initialize t_reconnect with current time
+    t_reconnect = Time.now();
 }
 
 void loop() {
@@ -173,21 +178,26 @@ void loop() {
     }
 
     //if the current time is greater than 10 seconds since last send,
-    if ((Time.now()-t_last_send)>10)
-    {   
-        if (client.isConnected())
-        {
+    if (client.isConnected())
+    {
+        if ((Time.now()-t_last_send)>10)
+        {   
             //send a keepalive message
             client.publish(topic_publish,"keepalive");
             
             //update last-sent time
             t_last_send = Time.now();
         }
-        else
+    }
+    else
+    {
+        if ((Time.now()-t_reconnect)>3)
         {
+            Serial.write("Client disconnected.\r\n");
+            Serial1.write("Client disconnected.\r\n");
+            client.disconnect();
             client.connect(client_name);
-            Serial.write("client disconnected\r\n");
-            Serial1.write("client disconnected\r\n");
+            t_reconnect = Time.now();
         }
     }
 

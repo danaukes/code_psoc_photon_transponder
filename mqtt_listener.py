@@ -16,25 +16,32 @@ import time
 def callback(client, userdata, message):
 	topic = str(message.topic)
 	message = str(message.payload.decode("utf-8"))
-	print(topic +': '+ message)
+	print('Message received from ('+topic +'): '+ message)
 
 # Create a MQTT client object
-my_client = mqtt.Client("EGR_304_Python_Listener_XYZ")		
+my_client = mqtt.Client("XYZ_py")		
 
-# Connect to a test MQTT broker
-my_client.connect("test.mosquitto.org", 1883)	
+def connect(my_client):
 
-# Subscribe to the topic "EGR_304_XYZ"
-my_client.subscribe("EGR_304_XYZ")			
-
-# Attach the messageFunction to subscription
-my_client.on_message = callback		
-
-# Start the MQTT client
-my_client.loop_start()				
+    # Connect to a test MQTT broker
+    my_client.connect("idealab.ddns.net", 1883)	
+    
+    # Subscribe to the topic "EGR_304_XYZ"
+    my_client.subscribe("EGR_304_XYZ")			
+    
+    # Attach the messageFunction to subscription
+    my_client.on_message = callback		
+    
+    # Start the MQTT client
+    my_client.loop_start()				
  
 # Main program loop
+connect(my_client)
 
 while(1):
     # Sleep for a second
+    
     time.sleep(1)
+    if not my_client.is_connected():
+        print('disconnected')
+        connect(my_client)        
