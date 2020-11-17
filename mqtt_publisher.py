@@ -13,7 +13,7 @@ import paho.mqtt.client as mqtt
 import time					
  
 # Create a MQTT client object
-my_client = mqtt.Client("EGR_304_Python_Publisher_DMA")		
+my_client = mqtt.Client("EGR_304_Python_Publisher_XYZ")		
 
 # Connect to a test MQTT broker
 my_client.connect("idealab.ddns.net", 1883)	
@@ -21,5 +21,5 @@ my_client.connect("idealab.ddns.net", 1883)
 while(True):
     # Sleep for a second
     time.sleep(3)
-    a=my_client.publish('EGR_304_DMA','Python Publisher Test')
+    a=my_client.publish('EGR_304_XYZ','Python Publisher Test')
     a.wait_for_publish()
