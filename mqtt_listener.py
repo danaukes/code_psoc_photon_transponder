@@ -19,7 +19,7 @@ def callback(client, userdata, message):
 	print('Message received from ('+topic +'): '+ message)
 
 # Create a MQTT client object
-my_client = mqtt.Client("XYZ_py")		
+my_client = mqtt.Client("EGR_304_Python_Listener_XYZ")		
 
 def connect(my_client):
 
