@@ -19,7 +19,7 @@ def callback(client, userdata, message):
 	print('Message received from ('+topic +'): '+ message)
 
 # Create a MQTT client object
-my_client = mqtt.Client("EGR_304_Python_Listener_DMA")		
+my_client = mqtt.Client("EGR_304_Python_Listener_XYZ")		
 
 def connect(my_client):
 
@@ -27,7 +27,7 @@ def connect(my_client):
     my_client.connect("idealab.ddns.net", 1883)	
     
     # Subscribe to the topic "EGR_304_XYZ"
-    my_client.subscribe("EGR_304_DMA")			
+    my_client.subscribe("EGR_304_XYZ")			
     
     # Attach the messageFunction to subscription
     my_client.on_message = callback		
