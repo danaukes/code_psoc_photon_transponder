@@ -37,6 +37,7 @@
 <v>Workspace01\Design01\Generated_Source\PSoC5\myUSB</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>Workspace01</v>
 <v>Workspace01\Design01</v>
 <v>Workspace01\Design01\TopDesign</v>
 <v>Workspace01\Design01\Design01.cydwr</v>
@@ -105,7 +106,6 @@
 <v>Workspace01\Design01\Generated_Source\PSoC5\cyfitteriar.inc</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\cyfitterrv.inc</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\cymetadata.c</v>
-<v>Workspace01\Design01\Generated_Source\PSoC5\project.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">

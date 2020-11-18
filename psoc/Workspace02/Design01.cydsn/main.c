@@ -23,12 +23,14 @@ char c;
 char rxdata[100];
 char txdata[100];
 
+//declare some counters
 int ii=0;
-int jj=0;
 int kk=0;
 
+//declare pointer for use in conversion
 char *ptr;
 
+//
 int read_val = 0;
 
 long lval = 0;
@@ -37,6 +39,14 @@ long lval = 0;
 uint16 len;
 
 int l=0;
+
+void clear_buf(char * buffer,int len)
+{
+    for (int ii=0;ii<len;ii++)
+    {
+        buffer[ii]=0;
+    }
+}
 
 int main(void)
 {
@@ -67,13 +77,16 @@ int main(void)
         {
             //retrieve one character and save in c
             c = UART_photon_GetChar();
-            //wait until USB is ready to send
-            if(c=='\n')
+
+            //make a decision based on the character received
+                //if you get newline characters, reset the counter, you are going to receive a new message
+            if(c=='\n' || c=='\r')
             {
                 read_val = 0;
+                clear_buf(rxdata,100);
                 ii=0;
             }
-            else if(c==';')
+            else if(c==';' || c=='.')
             {
                 read_val = 1;
                 ii=0;
@@ -86,12 +99,16 @@ int main(void)
                 ii++;
             }
         }
-        if (read_val)
+        
+        if (read_val!=0)
         {
             if (rxdata[0]=='l')
             {
+                rxdata[ii]=0;
                 lval = strtol( rxdata+1, &ptr, 10 );    // convert message to an integer
+                clear_buf(rxdata,100);
                 ii=0;
+                
             }
             
         }
@@ -107,6 +124,7 @@ int main(void)
             Pin_1_Write(0);
         }
         
+        //clear_buf(txdata,100);
         l=sprintf( txdata, "Hello! %ld\r\n", lval);
                 
         while (!myUSB_CDCIsReady());
@@ -117,29 +135,6 @@ int main(void)
             kk=0;
         }
         kk++;
-            //UART_photon_PutChar(txdata[jj]);
-
-        /*
-        //if there is data in the USB receive buffer`
-        if (myUSB_DataIsReady())
-        {
-            //read how many bytes are available
-            len = myUSB_GetCount();
-            
-            //if there are more than 64 bytes, restrict to first 64
-            if (len>64) len=64;
-            
-            //read data and return the actual number of bytes read to len
-            len = myUSB_GetData(pdata,len);
-            
-            //iterate through all received bytes 
-            for (int jj=0;jj<len;jj++)
-            {
-                //send one character at a time into UART 
-                UART_photon_PutChar(pdata[jj]);
-            }
-        }
-        */
 
     }
 }
