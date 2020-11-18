@@ -1,0 +1,51 @@
+dont_use_io iocell 1 0
+dont_use_io iocell 1 1
+dont_use_io iocell 1 3
+set_location "\UART_photon:BUART:sTX:sCLOCK:TxBitClkGen\" datapathcell 2 4 2 
+set_location "\UART_photon:BUART:rx_status_3\" macrocell 3 4 1 0
+set_location "\UART_photon:BUART:sRX:RxBitCounter\" count7cell 3 5 7 
+set_location "\UART_photon:BUART:rx_load_fifo\" macrocell 3 5 1 1
+set_location "\UART_photon:BUART:rx_state_0\" macrocell 3 5 0 0
+set_location "\UART_photon:BUART:tx_bitclk\" macrocell 2 4 1 2
+set_location "\UART_photon:BUART:sTX:TxSts\" statusicell 3 4 4 
+set_location "\UART_photon:BUART:tx_status_0\" macrocell 3 4 0 1
+set_location "\UART_photon:BUART:rx_status_4\" macrocell 2 5 0 1
+set_location "Net_291" macrocell 2 5 0 2
+set_location "\UART_photon:BUART:sRX:RxSts\" statusicell 2 5 4 
+set_location "\UART_photon:BUART:rx_state_2\" macrocell 3 5 1 0
+set_location "\UART_photon:BUART:rx_bitclk_enable\" macrocell 2 5 0 0
+set_location "\UART_photon:BUART:sTX:TxShifter:u0\" datapathcell 3 4 2 
+set_location "\UART_photon:BUART:pollcount_1\" macrocell 3 4 0 2
+set_location "\UART_photon:BUART:counter_load_not\" macrocell 2 4 1 1
+set_location "\UART_photon:BUART:tx_state_2\" macrocell 2 4 1 0
+set_location "\UART_photon:BUART:sRX:RxShifter:u0\" datapathcell 3 5 2 
+set_location "\UART_photon:BUART:rx_last\" macrocell 3 4 1 3
+set_location "\UART_photon:BUART:rx_state_stop1_reg\" macrocell 3 5 1 2
+set_location "\UART_photon:BUART:tx_ctrl_mark_last\" macrocell 3 5 0 3
+set_location "\UART_photon:BUART:rx_counter_load\" macrocell 3 5 0 1
+set_location "\UART_photon:BUART:txn\" macrocell 2 4 0 0
+set_location "\UART_photon:BUART:pollcount_0\" macrocell 3 4 1 2
+set_location "\UART_photon:BUART:tx_status_2\" macrocell 2 5 1 0
+set_location "\UART_photon:BUART:rx_postpoll\" macrocell 3 4 1 1
+set_location "\UART_photon:BUART:tx_state_1\" macrocell 2 4 0 1
+set_location "\UART_photon:BUART:rx_state_3\" macrocell 3 5 0 2
+set_location "\UART_photon:BUART:tx_state_0\" macrocell 3 4 0 0
+set_location "\UART_photon:BUART:rx_status_5\" macrocell 2 5 0 3
+set_location "\myUSB:bus_reset\" interrupt -1 -1 23
+set_io "Rx_1(0)" iocell 0 6
+set_location "\myUSB:USB\" usbcell -1 -1 0
+set_location "\myUSB:sof_int\" interrupt -1 -1 21
+set_location "ClockBlock" clockblockcell -1 -1 0
+set_location "\myUSB:arb_int\" interrupt -1 -1 22
+# Note: port 15 is the logical name for port 8
+set_io "\myUSB:Dp(0)\" iocell 15 6
+set_location "\myUSB:Dp\" logicalport -1 -1 8
+set_io "Tx_1(0)" iocell 0 7
+set_location "\myUSB:ep_1\" interrupt -1 -1 0
+set_location "\myUSB:ep_2\" interrupt -1 -1 1
+set_location "\myUSB:ep_0\" interrupt -1 -1 24
+set_location "\myUSB:ep_3\" interrupt -1 -1 2
+set_location "\myUSB:dp_int\" interrupt -1 -1 12
+# Note: port 15 is the logical name for port 8
+set_io "\myUSB:Dm(0)\" iocell 15 7
+set_io "Pin_1(0)" iocell 2 1

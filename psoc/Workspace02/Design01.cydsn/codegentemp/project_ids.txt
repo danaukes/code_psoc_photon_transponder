@@ -1,0 +1,6 @@
+C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace01\Design01.cydsn\Design01.cyprj|7d4cb2ca-1d79-4e4b-949f-42a619bd8d72
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|90eb5702-ede7-469b-8069-baef047b53be
+C:\Users\danaukes\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|3624dca4-659f-4e94-a2e0-433a408da190
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|94c6bc64-e5bf-411e-ae9f-c467aca60a27
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|3e4f4b61-f3b2-468b-8eac-3fd6c4e1d42f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|bdd0db94-726c-4e34-bb18-d7b56c963ea3
