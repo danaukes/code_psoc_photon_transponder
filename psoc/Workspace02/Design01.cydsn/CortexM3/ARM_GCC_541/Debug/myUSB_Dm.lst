@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
   28:Generated_Source\PSoC5/myUSB_Dm.c **** *
   29:Generated_Source\PSoC5/myUSB_Dm.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/myUSB_Dm.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 2
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 2
 
 
   31:Generated_Source\PSoC5/myUSB_Dm.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
   52              		.size	myUSB_Dm_Write, .-myUSB_Dm_Write
   53              		.section	.text.myUSB_Dm_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 3
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 3
 
 
   55              		.global	myUSB_Dm_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 7F500040 		.word	1073762431
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 4
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 4
 
 
   80              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  110              		.align	2
  111              		.global	myUSB_Dm_ReadDataReg
  112              		.thumb
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 5
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 5
 
 
  113              		.thumb_func
@@ -298,16 +298,16 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 6
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 6
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
  143 000a 04       		.byte	0x4
  144 000b 01       		.uleb128 0x1
- 145 000c A3000000 		.4byte	.LASF20
+ 145 000c 4F000000 		.4byte	.LASF20
  146 0010 0C       		.byte	0xc
- 147 0011 36010000 		.4byte	.LASF21
- 148 0015 23000000 		.4byte	.LASF22
+ 147 0011 E2000000 		.4byte	.LASF21
+ 148 0015 17010000 		.4byte	.LASF22
  149 0019 00000000 		.4byte	.Ldebug_ranges0+0
  150 001d 00000000 		.4byte	0
  151 0021 00000000 		.4byte	.Ldebug_line0
@@ -318,7 +318,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  156 002c 02       		.uleb128 0x2
  157 002d 01       		.byte	0x1
  158 002e 08       		.byte	0x8
- 159 002f 95000000 		.4byte	.LASF1
+ 159 002f 41000000 		.4byte	.LASF1
  160 0033 02       		.uleb128 0x2
  161 0034 02       		.byte	0x2
  162 0035 05       		.byte	0x5
@@ -326,7 +326,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  164 003a 02       		.uleb128 0x2
  165 003b 02       		.byte	0x2
  166 003c 07       		.byte	0x7
- 167 003d 58010000 		.4byte	.LASF3
+ 167 003d 04010000 		.4byte	.LASF3
  168 0041 02       		.uleb128 0x2
  169 0042 04       		.byte	0x4
  170 0043 05       		.byte	0x5
@@ -358,21 +358,21 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 7
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 7
 
 
  199 0079 04       		.byte	0x4
- 200 007a 8F000000 		.4byte	.LASF9
+ 200 007a 3B000000 		.4byte	.LASF9
  201 007e 02       		.uleb128 0x2
  202 007f 08       		.byte	0x8
  203 0080 04       		.byte	0x4
- 204 0081 88000000 		.4byte	.LASF10
+ 204 0081 34000000 		.4byte	.LASF10
  205 0085 02       		.uleb128 0x2
  206 0086 01       		.byte	0x1
  207 0087 08       		.byte	0x8
  208 0088 B4010000 		.4byte	.LASF11
  209 008c 04       		.uleb128 0x4
- 210 008d 31010000 		.4byte	.LASF13
+ 210 008d DD000000 		.4byte	.LASF13
  211 0091 02       		.byte	0x2
  212 0092 8E02     		.2byte	0x28e
  213 0094 98000000 		.4byte	0x98
@@ -388,13 +388,13 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  223 00ad 9C       		.byte	0x9c
  224 00ae CF000000 		.4byte	0xcf
  225 00b2 07       		.uleb128 0x7
- 226 00b3 77000000 		.4byte	.LASF16
+ 226 00b3 23000000 		.4byte	.LASF16
  227 00b7 01       		.byte	0x1
  228 00b8 39       		.byte	0x39
  229 00b9 6B000000 		.4byte	0x6b
  230 00bd 00000000 		.4byte	.LLST0
  231 00c1 08       		.uleb128 0x8
- 232 00c2 7D000000 		.4byte	.LASF23
+ 232 00c2 29000000 		.4byte	.LASF23
  233 00c6 01       		.byte	0x1
  234 00c7 3B       		.byte	0x3b
  235 00c8 6B000000 		.4byte	0x6b
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 8
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 8
 
 
  256 00f5 15000000 		.4byte	.LASF18
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 9
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 9
 
 
  313 0025 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 10
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 10
 
 
  370 005f 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 11
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 11
 
 
  427 0013 0400     		.2byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  480      02004500 
  480      00000201 
  480      FB0E0D00 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 12
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 12
 
 
  480      01010101 
@@ -673,69 +673,69 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  484      425F446D 
  484      5F526561 
  484      6400
- 485              	.LASF22:
- 486 0023 433A5C55 		.ascii	"C:\\Users\\danaukes\\code\\code_psoc_photon_transpo"
- 486      73657273 
- 486      5C64616E 
- 486      61756B65 
- 486      735C636F 
- 487 0052 6E646572 		.ascii	"nder\\psoc\\Workspace01\\Design01.cydsn\000"
- 487      5C70736F 
- 487      635C576F 
- 487      726B7370 
- 487      61636530 
- 488              	.LASF16:
- 489 0077 76616C75 		.ascii	"value\000"
- 489      6500
- 490              	.LASF23:
- 491 007d 73746174 		.ascii	"staticBits\000"
- 491      69634269 
- 491      747300
- 492              	.LASF10:
- 493 0088 646F7562 		.ascii	"double\000"
- 493      6C6500
- 494              	.LASF9:
- 495 008f 666C6F61 		.ascii	"float\000"
- 495      7400
- 496              	.LASF1:
- 497 0095 756E7369 		.ascii	"unsigned char\000"
- 497      676E6564 
- 497      20636861 
- 497      7200
- 498              	.LASF20:
- 499 00a3 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 499      43313120 
- 499      352E342E 
- 499      31203230 
- 499      31363036 
- 500 00d6 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 500      20726576 
- 500      6973696F 
- 500      6E203233 
- 500      37373135 
- 501 0109 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 501      66756E63 
- 501      74696F6E 
- 501      2D736563 
- 501      74696F6E 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 13
+ 485              	.LASF16:
+ 486 0023 76616C75 		.ascii	"value\000"
+ 486      6500
+ 487              	.LASF23:
+ 488 0029 73746174 		.ascii	"staticBits\000"
+ 488      69634269 
+ 488      747300
+ 489              	.LASF10:
+ 490 0034 646F7562 		.ascii	"double\000"
+ 490      6C6500
+ 491              	.LASF9:
+ 492 003b 666C6F61 		.ascii	"float\000"
+ 492      7400
+ 493              	.LASF1:
+ 494 0041 756E7369 		.ascii	"unsigned char\000"
+ 494      676E6564 
+ 494      20636861 
+ 494      7200
+ 495              	.LASF20:
+ 496 004f 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 496      43313120 
+ 496      352E342E 
+ 496      31203230 
+ 496      31363036 
+ 497 0082 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 497      20726576 
+ 497      6973696F 
+ 497      6E203233 
+ 497      37373135 
+ 498 00b5 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 498      66756E63 
+ 498      74696F6E 
+ 498      2D736563 
+ 498      74696F6E 
+ 499              	.LASF13:
+ 500 00dd 72656738 		.ascii	"reg8\000"
+ 500      00
+ 501              	.LASF21:
+ 502 00e2 47656E65 		.ascii	"Generated_Source\\PSoC5\\myUSB_Dm.c\000"
+ 502      72617465 
+ 502      645F536F 
+ 502      75726365 
+ 502      5C50536F 
+ 503              	.LASF3:
+ 504 0104 73686F72 		.ascii	"short unsigned int\000"
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 13
 
 
- 502              	.LASF13:
- 503 0131 72656738 		.ascii	"reg8\000"
- 503      00
- 504              	.LASF21:
- 505 0136 47656E65 		.ascii	"Generated_Source\\PSoC5\\myUSB_Dm.c\000"
- 505      72617465 
- 505      645F536F 
- 505      75726365 
- 505      5C50536F 
- 506              	.LASF3:
- 507 0158 73686F72 		.ascii	"short unsigned int\000"
- 507      7420756E 
- 507      7369676E 
- 507      65642069 
- 507      6E7400
+ 504      7420756E 
+ 504      7369676E 
+ 504      65642069 
+ 504      6E7400
+ 505              	.LASF22:
+ 506 0117 433A5C55 		.ascii	"C:\\Users\\danaukes\\code\\code_psoc_photon_transpo"
+ 506      73657273 
+ 506      5C64616E 
+ 506      61756B65 
+ 506      735C636F 
+ 507 0146 6E646572 		.ascii	"nder\\psoc\\Workspace02\\Design01.cydsn\000"
+ 507      5C70736F 
+ 507      635C576F 
+ 507      726B7370 
+ 507      61636530 
  508              	.LASF5:
  509 016b 6C6F6E67 		.ascii	"long unsigned int\000"
  509      20756E73 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 1
  525      3800
  526              	.LASF4:
  527 01d8 6C6F6E67 		.ascii	"long int\000"
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccGFsjef.s 			page 14
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccPYLnwZ.s 			page 14
 
 
  527      20696E74 

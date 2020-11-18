@@ -1,4 +1,4 @@
-C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace01\Design01.cydsn\TopDesign\TopDesign.cysch
+C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace02\Design01.cydsn\TopDesign\TopDesign.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\USBFS_v3_20\USBFS_v3_20.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\USBFS_v3_20\USBFS_v3_20.pdf
 C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\USBFS_v3_20\USBFS_v3_20.cycdx
@@ -219,7 +219,7 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyPrim
 C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\Custom\custom.cs
 C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v
-C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace01\Design01.cydsn\Design01.cydwr
+C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace02\Design01.cydsn\Design01.cydwr
 C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_90\PSoC5\API\cm3gcc.ld
 C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_90\PSoC5\API\Cm3RealView.scat
 C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_90\PSoC5\API\Cm3Start.c

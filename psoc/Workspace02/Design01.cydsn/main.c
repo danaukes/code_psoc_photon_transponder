@@ -25,6 +25,7 @@ char txdata[100];
 
 int ii=0;
 int jj=0;
+int kk=0;
 
 char *ptr;
 
@@ -75,12 +76,13 @@ int main(void)
             else if(c==';')
             {
                 read_val = 1;
+                ii=0;
                 break;
             }
             else
             {
-                rxdata[ii]=c;
                 read_val = 0;
+                rxdata[ii]=c;
                 ii++;
             }
         }
@@ -90,10 +92,11 @@ int main(void)
             {
                 lval = strtol( rxdata+1, &ptr, 10 );    // convert message to an integer
                 ii=0;
-                read_val = 0;
             }
             
         }
+
+        read_val = 0;
         
         if (lval>50)
         {
@@ -108,8 +111,12 @@ int main(void)
                 
         while (!myUSB_CDCIsReady());
             //put character in
-        myUSB_PutString(txdata);
-    
+        if (kk==100)
+        {
+            myUSB_PutString(txdata);
+            kk=0;
+        }
+        kk++;
             //UART_photon_PutChar(txdata[jj]);
 
         /*

@@ -258,9 +258,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\Design01.cydsn\main.c" />
-<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Design01.cydsn\Design01.cydwr" />
+<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Design01.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -268,7 +268,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="753, 1091" SelectedTabbedMdiWindow="4fc054c6-6f23-4488-865d-d05320d66bd8"><DocumentWindow Key="C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace01\Design01.cydsn\main.c" Guid="4fc054c6-6f23-4488-865d-d05320d66bd8" /><DocumentWindow Key="C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace01\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="eefe335a-1581-4a79-ad97-8793c5060f70" /><DocumentWindow Key="C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace01\Design01.cydsn\Design01.cydwr" Guid="752a67dc-5adf-4cda-9e48-cceeea88ffea" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="494eaa39-696c-43bb-ba66-0e904b0f4d5f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1849, 1100" SelectedTabbedMdiWindow="d644d8f6-449a-4ae1-ad4b-f99d74cdc5bd"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="494eaa39-696c-43bb-ba66-0e904b0f4d5f" /><DocumentWindow Key="C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace02\Design01.cydsn\Design01.cydwr" Guid="1b8472b1-4bb8-47a4-a0ad-695b8eb4893e" /><DocumentWindow Key="C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace02\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="1307dd55-5a0b-4219-90af-2687f747aee8" /><DocumentWindow Key="C:\Users\danaukes\code\code_psoc_photon_transponder\psoc\Workspace02\Design01.cydsn\main.c" Guid="d644d8f6-449a-4ae1-ad4b-f99d74cdc5bd" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

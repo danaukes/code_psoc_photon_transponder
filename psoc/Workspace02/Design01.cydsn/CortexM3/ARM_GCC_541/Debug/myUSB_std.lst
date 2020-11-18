@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
   28:Generated_Source\PSoC5/myUSB_std.c ****     /***************************************************************************
   29:Generated_Source\PSoC5/myUSB_std.c ****     * Function Name: myUSB_SerialNumString
   30:Generated_Source\PSoC5/myUSB_std.c ****     ************************************************************************//**
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 2
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 2
 
 
   31:Generated_Source\PSoC5/myUSB_std.c ****     *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
   85:Generated_Source\PSoC5/myUSB_std.c **** {
   86:Generated_Source\PSoC5/myUSB_std.c ****     uint8 requestHandled = myUSB_FALSE;
   87:Generated_Source\PSoC5/myUSB_std.c ****     uint8 interfaceNumber;
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 3
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 3
 
 
   88:Generated_Source\PSoC5/myUSB_std.c ****     uint8 configurationN;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  142:Generated_Source\PSoC5/myUSB_std.c ****                                                                              (myUSB_currentTD.pData
  143:Generated_Source\PSoC5/myUSB_std.c ****                         requestHandled  = myUSB_InitControlRead();
  144:Generated_Source\PSoC5/myUSB_std.c ****                     }
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 4
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 4
 
 
  145:Generated_Source\PSoC5/myUSB_std.c ****                 }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  199:Generated_Source\PSoC5/myUSB_std.c ****                     if (*pStr != 0u)
  200:Generated_Source\PSoC5/myUSB_std.c ****                     {
  201:Generated_Source\PSoC5/myUSB_std.c ****                         myUSB_currentTD.count = *pStr;
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 5
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 5
 
 
  202:Generated_Source\PSoC5/myUSB_std.c ****                         myUSB_currentTD.pData = pStr;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  256:Generated_Source\PSoC5/myUSB_std.c ****         switch (myUSB_bRequestReg)
  257:Generated_Source\PSoC5/myUSB_std.c ****         {
  258:Generated_Source\PSoC5/myUSB_std.c ****             case myUSB_SET_ADDRESS:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 6
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 6
 
 
  259:Generated_Source\PSoC5/myUSB_std.c ****                 /* Store address to be set in myUSB_NoDataControlStatusStage(). */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  313:Generated_Source\PSoC5/myUSB_std.c ****                 {
  314:Generated_Source\PSoC5/myUSB_std.c ****                     case myUSB_RQST_RCPT_EP:
  315:Generated_Source\PSoC5/myUSB_std.c ****                         if (myUSB_wValueLoReg == myUSB_ENDPOINT_HALT)
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 7
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 7
 
 
  316:Generated_Source\PSoC5/myUSB_std.c ****                         {
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  370:Generated_Source\PSoC5/myUSB_std.c ****                         break;
  371:Generated_Source\PSoC5/myUSB_std.c ****                 }
  372:Generated_Source\PSoC5/myUSB_std.c ****                 break;
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 8
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 8
 
 
  373:Generated_Source\PSoC5/myUSB_std.c ****                 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  404:Generated_Source\PSoC5/myUSB_std.c **** 
  405:Generated_Source\PSoC5/myUSB_std.c ****         if (NULL != descr)
   51              		.loc 1 405 0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 9
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 9
 
 
   52 0012 35B3     		cbz	r5, .L1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
   90 0052 DA1C     		adds	r2, r3, #3
   91 0054 A954     		strb	r1, [r5, r2]
  421:Generated_Source\PSoC5/myUSB_std.c ****                 ++j;
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 10
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 10
 
 
   92              		.loc 1 421 0 discriminator 3
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  437:Generated_Source\PSoC5/myUSB_std.c **** void myUSB_ConfigReg(void) 
  438:Generated_Source\PSoC5/myUSB_std.c **** {
  129              		.loc 1 438 0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 11
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 11
 
 
  130              		.cfi_startproc
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  458:Generated_Source\PSoC5/myUSB_std.c ****             {
  459:Generated_Source\PSoC5/myUSB_std.c ****                 myUSB_SIE_EP_BASE.sieEp[ep].epCr0 = myUSB_MODE_NAK_IN;
  165              		.loc 1 459 0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 12
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 12
 
 
  166 0034 1801     		lsls	r0, r3, #4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  191 005a 0F48     		ldr	r0, .L15+4
  192 005c 0244     		add	r2, r2, r0
  193 005e D488     		ldrh	r4, [r2, #6]
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 13
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 13
 
 
  194 0060 E4B2     		uxtb	r4, r4
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  515:Generated_Source\PSoC5/myUSB_std.c **** 
  516:Generated_Source\PSoC5/myUSB_std.c **** #endif /* (myUSB_EP_MANAGEMENT_DMA_AUTO) */
  517:Generated_Source\PSoC5/myUSB_std.c **** 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 14
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 14
 
 
  518:Generated_Source\PSoC5/myUSB_std.c ****     /* Enable interrupt SIE interurpt source from EP0-EP1 */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  255 0000 0123     		movs	r3, #1
  256 0002 19E0     		b	.L18
  257              	.LVL17:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 15
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 15
 
 
  258              	.L21:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  296 003e 00BF     		.align	2
  297              	.L22:
  298 0040 00000000 		.word	myUSB_EP
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 16
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 16
 
 
  299              		.cfi_endproc
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  594:Generated_Source\PSoC5/myUSB_std.c ****         myUSB_EP[ep].epMode     = myUSB_MODE_DISABLE;   
  595:Generated_Source\PSoC5/myUSB_std.c ****     }
  596:Generated_Source\PSoC5/myUSB_std.c **** 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 17
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 17
 
 
  597:Generated_Source\PSoC5/myUSB_std.c ****     /* Clear Alternate settings for all interfaces. */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  651:Generated_Source\PSoC5/myUSB_std.c ****                         myUSB_EP[curEp].epMode     = myUSB_GET_ACTIVE_IN_EP_CR0_MODE(epType);
  652:Generated_Source\PSoC5/myUSB_std.c ****                         myUSB_EP[curEp].apiEpState = myUSB_EVENT_PENDING;
  653:Generated_Source\PSoC5/myUSB_std.c ****                     
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 18
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 18
 
 
  654:Generated_Source\PSoC5/myUSB_std.c ****                     #if (defined(myUSB_ENABLE_MIDI_STREAMING) && (myUSB_MIDI_IN_BUFF_SIZE > 0))
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  708:Generated_Source\PSoC5/myUSB_std.c ****                             myUSB_EP[i].attrib = pEP->attributes;
  709:Generated_Source\PSoC5/myUSB_std.c ****                             
  710:Generated_Source\PSoC5/myUSB_std.c ****                             epType = pEP->attributes & myUSB_EP_TYPE_MASK;
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 19
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 19
 
 
  711:Generated_Source\PSoC5/myUSB_std.c ****                             
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  765:Generated_Source\PSoC5/myUSB_std.c ****             /* Configure interface number for each EP */
  766:Generated_Source\PSoC5/myUSB_std.c ****             myUSB_EP[pEP->addr & myUSB_DIR_UNUSED].interface = pEP->interface;
  767:Generated_Source\PSoC5/myUSB_std.c ****             pEP = &pEP[1u];
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 20
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 20
 
 
  768:Generated_Source\PSoC5/myUSB_std.c ****         }
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  822:Generated_Source\PSoC5/myUSB_std.c ****         ep = pTmp->c;
  823:Generated_Source\PSoC5/myUSB_std.c **** 
  824:Generated_Source\PSoC5/myUSB_std.c ****         /* Get pointer to endpoints setting table (pEP). */
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 21
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 21
 
 
  825:Generated_Source\PSoC5/myUSB_std.c ****         pEP = (const T_myUSB_EP_SETTINGS_BLOCK CYCODE *) pTmp->p_list;
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  879:Generated_Source\PSoC5/myUSB_std.c ****                 /* Change EP Type with new direction */
  880:Generated_Source\PSoC5/myUSB_std.c ****                 if (0u != (pEP->addr & myUSB_DIR_IN))
  881:Generated_Source\PSoC5/myUSB_std.c ****                 {
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 22
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 22
 
 
  882:Generated_Source\PSoC5/myUSB_std.c ****                     /* Set endpoint type: 0 - IN and 1 - OUT. */
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  936:Generated_Source\PSoC5/myUSB_std.c **** *  \param confIndex:  Configuration Index
  937:Generated_Source\PSoC5/myUSB_std.c **** *
  938:Generated_Source\PSoC5/myUSB_std.c **** * \return
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 23
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 23
 
 
  939:Generated_Source\PSoC5/myUSB_std.c **** *  Device Descriptor pointer or NULL when descriptor does not exist.
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  338 001c 0020     		movs	r0, #0
  339              	.LVL25:
  964:Generated_Source\PSoC5/myUSB_std.c ****     }
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 24
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 24
 
 
  965:Generated_Source\PSoC5/myUSB_std.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  386 001a C268     		ldr	r2, [r0, #12]
  387              	.LVL28:
  831:Generated_Source\PSoC5/myUSB_std.c ****         for (i = 0u; i < ep; i++)
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 25
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 25
 
 
  388              		.loc 1 831 0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  845:Generated_Source\PSoC5/myUSB_std.c **** 
  433              		.loc 1 845 0
  434 006a 9788     		ldrh	r7, [r2, #4]
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 26
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 26
 
 
  435 006c 2F81     		strh	r7, [r5, #8]	@ movhi
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  861:Generated_Source\PSoC5/myUSB_std.c **** 
  482              		.loc 1 861 0
  483 00ac DFF868E0 		ldr	lr, .L41+20
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 27
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 27
 
 
  484 00b0 0F01     		lsls	r7, r1, #4
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  832:Generated_Source\PSoC5/myUSB_std.c ****         {
  530              		.loc 1 832 0 is_stmt 0 discriminator 1
  531 00fc A342     		cmp	r3, r4
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 28
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 28
 
 
  532 00fe 92D3     		bcc	.L37
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  998:Generated_Source\PSoC5/myUSB_std.c **** #endif /* (myUSB_BOS_ENABLE) */
  999:Generated_Source\PSoC5/myUSB_std.c **** 
 1000:Generated_Source\PSoC5/myUSB_std.c **** 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 29
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 29
 
 
 1001:Generated_Source\PSoC5/myUSB_std.c **** /*******************************************************************************
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
 1026:Generated_Source\PSoC5/myUSB_std.c **** * \return
 1027:Generated_Source\PSoC5/myUSB_std.c **** *  Interface Class table pointer.
 1028:Generated_Source\PSoC5/myUSB_std.c **** *
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 30
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 30
 
 
 1029:Generated_Source\PSoC5/myUSB_std.c **** *******************************************************************************/
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  619              	.LVL48:
 1049:Generated_Source\PSoC5/myUSB_std.c ****     }
 1050:Generated_Source\PSoC5/myUSB_std.c **** 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 31
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 31
 
 
 1051:Generated_Source\PSoC5/myUSB_std.c ****     return (pInterfaceClass);
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  590:Generated_Source\PSoC5/myUSB_std.c ****         myUSB_EP[ep].bufferSize = 0u;
  668              		.loc 1 590 0 discriminator 3
  669 0018 E270     		strb	r2, [r4, #3]
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 32
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 32
 
 
  591:Generated_Source\PSoC5/myUSB_std.c ****         myUSB_EP[ep].interface  = 0u;
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  713 0044 012B     		cmp	r3, #1
  714 0046 F4D9     		bls	.L57
  715              	.LVL59:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 33
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 33
 
 
  716              	.L56:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  761              		.loc 1 687 0
  762 008a 0126     		movs	r6, #1
  763 008c 6FE0     		b	.L61
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 34
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 34
 
 
  764              	.LVL68:
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  811 00e0 0EEB0003 		add	r3, lr, r0
  812 00e4 83F804C0 		strb	ip, [r3, #4]
  708:Generated_Source\PSoC5/myUSB_std.c ****                             
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 35
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 35
 
 
  813              		.loc 1 708 0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  860 013c 4FEA8C00 		lsl	r0, ip, #2
  861 0140 7044     		add	r0, r0, lr
  862 0142 80F80590 		strb	r9, [r0, #5]
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 36
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 36
 
 
  863              	.LVL76:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  907 0172 D8F80C00 		ldr	r0, [r8, #12]
  908              	.LVL84:
  763:Generated_Source\PSoC5/myUSB_std.c ****         {
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 37
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 37
 
 
  909              		.loc 1 763 0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  955 01b2 2289     		ldrh	r2, [r4, #8]
  956 01b4 92B2     		uxth	r2, r2
  957 01b6 1344     		add	r3, r3, r2
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 38
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 38
 
 
  958              	.LVL93:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
 1059:Generated_Source\PSoC5/myUSB_std.c **** *  This function terminates the specified USBFS endpoint.
 1060:Generated_Source\PSoC5/myUSB_std.c **** *  This function should be used before endpoint reconfiguration.
 1061:Generated_Source\PSoC5/myUSB_std.c **** *
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 39
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 39
 
 
 1062:Generated_Source\PSoC5/myUSB_std.c **** *  \param ep Contains the data endpoint number.
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1031              		.loc 1 1086 0
  1032 0026 1B79     		ldrb	r3, [r3, #4]	@ zero_extendqisi2
  1033 0028 13F0800F 		tst	r3, #128
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 40
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 40
 
 
  1034 002c 04D0     		beq	.L84
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
 1107:Generated_Source\PSoC5/myUSB_std.c **** *  requestHandled.
 1108:Generated_Source\PSoC5/myUSB_std.c **** *
 1109:Generated_Source\PSoC5/myUSB_std.c **** * \reentrant
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 41
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 41
 
 
 1110:Generated_Source\PSoC5/myUSB_std.c **** *  No.
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
 1129:Generated_Source\PSoC5/myUSB_std.c **** 
 1130:Generated_Source\PSoC5/myUSB_std.c ****         if ((myUSB_EP[ep].addr & myUSB_DIR_IN) != 0u)
  1103              		.loc 1 1130 0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 42
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 42
 
 
  1104 0030 1279     		ldrb	r2, [r2, #4]	@ zero_extendqisi2
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1141 005c 00000000 		.word	myUSB_EP
  1142 0060 FC5F0040 		.word	1073766396
  1143              		.cfi_endproc
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 43
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 43
 
 
  1144              	.LFE10:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1173              		.cfi_offset 14, -4
 1171:Generated_Source\PSoC5/myUSB_std.c ****     {
 1172:Generated_Source\PSoC5/myUSB_std.c ****         /* Clear the endpoint Halt */
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 44
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 44
 
 
 1173:Generated_Source\PSoC5/myUSB_std.c ****         myUSB_EP[ep].hwEpState &= (uint8) ~myUSB_ENDPOINT_STATUS_HALT;
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1210 0056 2246     		mov	r2, r4
  1211 0058 0244     		add	r2, r2, r0
  1212 005a 0C23     		movs	r3, #12
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 45
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 45
 
 
  1213              	.LVL116:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1250 008c 064A     		ldr	r2, .L104+8
  1251 008e 1A44     		add	r2, r2, r3
  1252 0090 0923     		movs	r3, #9
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 46
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 46
 
 
  1253 0092 9370     		strb	r3, [r2, #2]
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
 1230:Generated_Source\PSoC5/myUSB_std.c **** *******************************************************************************/
 1231:Generated_Source\PSoC5/myUSB_std.c **** uint8 myUSB_ValidateAlternateSetting(void) 
 1232:Generated_Source\PSoC5/myUSB_std.c **** {
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 47
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 47
 
 
  1284              		.loc 1 1232 0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1318 0022 135D     		ldrb	r3, [r2, r4]	@ zero_extendqisi2
  1319              	.LVL129:
  1320 0024 DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 48
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 48
 
 
  1321 0026 0849     		ldr	r1, .L111+12
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1366              		.cfi_offset 14, -4
  1367              	.LVL135:
   89:Generated_Source\PSoC5/myUSB_std.c **** 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 49
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 49
 
 
  1368              		.loc 1 89 0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1415              		.loc 1 114 0
  1416 0050 1222     		movs	r2, #18
  1417 0052 1A80     		strh	r2, [r3]	@ movhi
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 50
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 50
 
 
  116:Generated_Source\PSoC5/myUSB_std.c ****                 }
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1462 0094 05D0     		beq	.L149
  1463 0096 2CE0     		b	.L163
  1464              	.LVL144:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 51
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 51
 
 
  1465              	.L126:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1510              		.loc 1 181 0
  1511 00d0 6C4C     		ldr	r4, .L168+16
  1512 00d2 2046     		mov	r0, r4
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 52
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 52
 
 
  1513 00d4 FFF7FEFF 		bl	myUSB_ReadDieID
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1558 011a 9278     		ldrb	r2, [r2, #2]	@ zero_extendqisi2
  1559 011c D2B2     		uxtb	r2, r2
  1560 011e 5B4B     		ldr	r3, .L168+24
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 53
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 53
 
 
  1561 0120 1A70     		strb	r2, [r3]
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1603 0152 5A60     		str	r2, [r3, #4]
  240:Generated_Source\PSoC5/myUSB_std.c ****                 break;
  1604              		.loc 1 240 0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 54
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 54
 
 
  1605 0154 FFF7FEFF 		bl	myUSB_InitControlRead
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1652              	.LVL169:
  1653 0198 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
  1654 019a DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 55
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 55
 
 
  1655 019c 3F4A     		ldr	r2, .L168+40
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1698              	.LVL175:
  1699 01d2 334B     		ldr	r3, .L168+44
  1700 01d4 1870     		strb	r0, [r3]
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 56
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 56
 
 
  281:Generated_Source\PSoC5/myUSB_std.c ****                     }
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1746              	.LVL183:
  1747 0216 10BD     		pop	{r4, pc}
  1748              	.LVL184:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 57
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 57
 
 
  1749              	.L130:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1795 025e 1B79     		ldrb	r3, [r3, #4]	@ zero_extendqisi2
  1796 0260 DBB2     		uxtb	r3, r3
  1797 0262 1249     		ldr	r1, .L168+56
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 58
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 58
 
 
  1798 0264 CA5C     		ldrb	r2, [r1, r3]	@ zero_extendqisi2
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1847 02d2 DBB2     		uxtb	r3, r3
  1848 02d4 012B     		cmp	r3, #1
  1849 02d6 32D1     		bne	.L161
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 59
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 59
 
 
  355:Generated_Source\PSoC5/myUSB_std.c ****                             requestHandled = myUSB_InitNoDataControlTransfer();
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1898              	.LVL203:
  1899              	.L152:
  1900 031a 0020     		movs	r0, #0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 60
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 60
 
 
  1901 031c 10BD     		pop	{r4, pc}
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1950              		.align	2
  1951              		.set	.LANCHOR0,. + 0
  1952              		.type	myUSB_tBuffer.5250, %object
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 61
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 61
 
 
  1953              		.size	myUSB_tBuffer.5250, 2
@@ -3620,34 +3620,34 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  1969 000c D9010000 		.4byte	.LASF118
  1970 0010 0C       		.byte	0xc
  1971 0011 4A010000 		.4byte	.LASF119
- 1972 0015 70040000 		.4byte	.LASF120
+ 1972 0015 7F060000 		.4byte	.LASF120
  1973 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1974 001d 00000000 		.4byte	0
  1975 0021 00000000 		.4byte	.Ldebug_line0
  1976 0025 02       		.uleb128 0x2
  1977 0026 01       		.byte	0x1
  1978 0027 06       		.byte	0x6
- 1979 0028 9A060000 		.4byte	.LASF0
+ 1979 0028 46060000 		.4byte	.LASF0
  1980 002c 02       		.uleb128 0x2
  1981 002d 01       		.byte	0x1
  1982 002e 08       		.byte	0x8
- 1983 002f 05060000 		.4byte	.LASF1
+ 1983 002f B1050000 		.4byte	.LASF1
  1984 0033 02       		.uleb128 0x2
  1985 0034 02       		.byte	0x2
  1986 0035 05       		.byte	0x5
- 1987 0036 24050000 		.4byte	.LASF2
+ 1987 0036 D0040000 		.4byte	.LASF2
  1988 003a 02       		.uleb128 0x2
  1989 003b 02       		.byte	0x2
  1990 003c 07       		.byte	0x7
- 1991 003d A6060000 		.4byte	.LASF3
+ 1991 003d 52060000 		.4byte	.LASF3
  1992 0041 02       		.uleb128 0x2
  1993 0042 04       		.byte	0x4
  1994 0043 05       		.byte	0x5
- 1995 0044 35050000 		.4byte	.LASF4
+ 1995 0044 E1040000 		.4byte	.LASF4
  1996 0048 02       		.uleb128 0x2
  1997 0049 04       		.byte	0x4
  1998 004a 07       		.byte	0x7
- 1999 004b CF050000 		.4byte	.LASF5
+ 1999 004b 7B050000 		.4byte	.LASF5
  2000 004f 02       		.uleb128 0x2
  2001 0050 08       		.byte	0x8
  2002 0051 05       		.byte	0x5
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2007 0059 78010000 		.4byte	.LASF7
  2008 005d 03       		.uleb128 0x3
  2009 005e 04       		.byte	0x4
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 62
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 62
 
 
  2010 005f 05       		.byte	0x5
@@ -3713,12 +3713,12 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2059 00c8 02       		.uleb128 0x2
  2060 00c9 04       		.byte	0x4
  2061 00ca 07       		.byte	0x7
- 2062 00cb C6050000 		.4byte	.LASF18
+ 2062 00cb 72050000 		.4byte	.LASF18
  2063 00cf 06       		.uleb128 0x6
  2064 00d0 0C       		.byte	0xc
  2065 00d1 03       		.byte	0x3
  2066 00d2 8D       		.byte	0x8d
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 63
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 63
 
 
  2067 00d3 44010000 		.4byte	0x144
@@ -3747,13 +3747,13 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2090 0102 6B000000 		.4byte	0x6b
  2091 0106 03       		.byte	0x3
  2092 0107 07       		.uleb128 0x7
- 2093 0108 48060000 		.4byte	.LASF23
+ 2093 0108 F4050000 		.4byte	.LASF23
  2094 010c 03       		.byte	0x3
  2095 010d 93       		.byte	0x93
  2096 010e 6B000000 		.4byte	0x6b
  2097 0112 04       		.byte	0x4
  2098 0113 07       		.uleb128 0x7
- 2099 0114 2E050000 		.4byte	.LASF24
+ 2099 0114 DA040000 		.4byte	.LASF24
  2100 0118 03       		.byte	0x3
  2101 0119 94       		.byte	0x94
  2102 011a 6B000000 		.4byte	0x6b
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2121 0142 0A       		.byte	0xa
  2122 0143 00       		.byte	0
  2123 0144 08       		.uleb128 0x8
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 64
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 64
 
 
  2124 0145 8E020000 		.4byte	.LASF28
@@ -3803,13 +3803,13 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2143 016a 6B000000 		.4byte	0x6b
  2144 016e 01       		.byte	0x1
  2145 016f 07       		.uleb128 0x7
- 2146 0170 48060000 		.4byte	.LASF23
+ 2146 0170 F4050000 		.4byte	.LASF23
  2147 0174 03       		.byte	0x3
  2148 0175 9E       		.byte	0x9e
  2149 0176 6B000000 		.4byte	0x6b
  2150 017a 02       		.byte	0x2
  2151 017b 07       		.uleb128 0x7
- 2152 017c 3D060000 		.4byte	.LASF30
+ 2152 017c E9050000 		.4byte	.LASF30
  2153 0180 03       		.byte	0x3
  2154 0181 9F       		.byte	0x9f
  2155 0182 6B000000 		.4byte	0x6b
@@ -3828,7 +3828,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2168 019e 06       		.byte	0x6
  2169 019f 00       		.byte	0
  2170 01a0 08       		.uleb128 0x8
- 2171 01a1 45050000 		.4byte	.LASF32
+ 2171 01a1 F1040000 		.4byte	.LASF32
  2172 01a5 03       		.byte	0x3
  2173 01a6 A2       		.byte	0xa2
  2174 01a7 4F010000 		.4byte	0x14f
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2178 01ae A4       		.byte	0xa4
  2179 01af CC010000 		.4byte	0x1cc
  2180 01b3 07       		.uleb128 0x7
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 65
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 65
 
 
  2181 01b4 2F030000 		.4byte	.LASF33
@@ -3847,14 +3847,14 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2184 01ba 6B000000 		.4byte	0x6b
  2185 01be 00       		.byte	0
  2186 01bf 07       		.uleb128 0x7
- 2187 01c0 3E050000 		.4byte	.LASF34
+ 2187 01c0 EA040000 		.4byte	.LASF34
  2188 01c4 03       		.byte	0x3
  2189 01c5 A7       		.byte	0xa7
  2190 01c6 77000000 		.4byte	0x77
  2191 01ca 02       		.byte	0x2
  2192 01cb 00       		.byte	0
  2193 01cc 08       		.uleb128 0x8
- 2194 01cd B9060000 		.4byte	.LASF35
+ 2194 01cd 65060000 		.4byte	.LASF35
  2195 01d1 03       		.byte	0x3
  2196 01d2 A8       		.byte	0xa8
  2197 01d3 AB010000 		.4byte	0x1ab
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2235 021d 03       		.byte	0x3
  2236 021e B1       		.byte	0xb1
  2237 021f 3A020000 		.4byte	0x23a
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 66
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 66
 
 
  2238 0223 0A       		.uleb128 0xa
@@ -3908,7 +3908,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2242 0228 6B000000 		.4byte	0x6b
  2243 022c 00       		.byte	0
  2244 022d 07       		.uleb128 0x7
- 2245 022e F1050000 		.4byte	.LASF40
+ 2245 022e 9D050000 		.4byte	.LASF40
  2246 0232 03       		.byte	0x3
  2247 0233 B4       		.byte	0xb4
  2248 0234 3A020000 		.4byte	0x23a
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2292 028a D6       		.byte	0xd6
  2293 028b 6B000000 		.4byte	0x6b
  2294 028f 00       		.byte	0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 67
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 67
 
 
  2295 0290 07       		.uleb128 0x7
@@ -3998,7 +3998,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2329 02d3 E6       		.byte	0xe6
  2330 02d4 51030000 		.4byte	0x351
  2331 02d8 07       		.uleb128 0x7
- 2332 02d9 7F050000 		.4byte	.LASF48
+ 2332 02d9 2B050000 		.4byte	.LASF48
  2333 02dd 03       		.byte	0x3
  2334 02de E8       		.byte	0xe8
  2335 02df 6B000000 		.4byte	0x6b
@@ -4010,7 +4010,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2341 02eb 6B000000 		.4byte	0x6b
  2342 02ef 01       		.byte	0x1
  2343 02f0 07       		.uleb128 0x7
- 2344 02f1 EC050000 		.4byte	.LASF50
+ 2344 02f1 98050000 		.4byte	.LASF50
  2345 02f5 03       		.byte	0x3
  2346 02f6 EA       		.byte	0xea
  2347 02f7 6B000000 		.4byte	0x6b
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2349 02fc 07       		.uleb128 0x7
  2350 02fd DC060000 		.4byte	.LASF51
  2351 0301 03       		.byte	0x3
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 68
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 68
 
 
  2352 0302 EB       		.byte	0xeb
@@ -4031,19 +4031,19 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2359 030f 6B000000 		.4byte	0x6b
  2360 0313 04       		.byte	0x4
  2361 0314 07       		.uleb128 0x7
- 2362 0315 FD050000 		.4byte	.LASF53
+ 2362 0315 A9050000 		.4byte	.LASF53
  2363 0319 03       		.byte	0x3
  2364 031a ED       		.byte	0xed
  2365 031b 6B000000 		.4byte	0x6b
  2366 031f 05       		.byte	0x5
  2367 0320 07       		.uleb128 0x7
- 2368 0321 95060000 		.4byte	.LASF54
+ 2368 0321 41060000 		.4byte	.LASF54
  2369 0325 03       		.byte	0x3
  2370 0326 EE       		.byte	0xee
  2371 0327 6B000000 		.4byte	0x6b
  2372 032b 06       		.byte	0x6
  2373 032c 07       		.uleb128 0x7
- 2374 032d 5F050000 		.4byte	.LASF55
+ 2374 032d 0B050000 		.4byte	.LASF55
  2375 0331 03       		.byte	0x3
  2376 0332 EF       		.byte	0xef
  2377 0333 6B000000 		.4byte	0x6b
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2406 036e 03       		.byte	0x3
  2407 036f 0E01     		.2byte	0x10e
  2408 0371 83030000 		.4byte	0x383
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 69
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 69
 
 
  2409 0375 0F       		.uleb128 0xf
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2463 03ed 01       		.byte	0x1
  2464 03ee 8E01     		.2byte	0x18e
  2465 03f0 43040000 		.4byte	0x443
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 70
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 70
 
 
  2466 03f4 00000000 		.4byte	.LLST0
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2520 0463 10       		.uleb128 0x10
  2521 0464 54030000 		.4byte	.LASF64
  2522 0468 01       		.byte	0x1
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 71
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 71
 
 
  2523 0469 B501     		.2byte	0x1b5
@@ -4215,7 +4215,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2534 0484 80000000 		.4byte	.LLST3
  2535 0488 00       		.byte	0
  2536 0489 10       		.uleb128 0x10
- 2537 048a 8A050000 		.4byte	.LASF65
+ 2537 048a 36050000 		.4byte	.LASF65
  2538 048e 01       		.byte	0x1
  2539 048f 1402     		.2byte	0x214
  2540 0491 00000000 		.4byte	.LFB3
@@ -4247,7 +4247,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2566 04d0 6B000000 		.4byte	0x6b
  2567 04d4 D4000000 		.4byte	.LLST5
  2568 04d8 19       		.uleb128 0x19
- 2569 04d9 85050000 		.4byte	.LASF68
+ 2569 04d9 31050000 		.4byte	.LASF68
  2570 04dd 01       		.byte	0x1
  2571 04de B203     		.2byte	0x3b2
  2572 04e0 E9040000 		.4byte	0x4e9
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2577 04eb EF040000 		.4byte	0x4ef
  2578 04ef 17       		.uleb128 0x17
  2579 04f0 41020000 		.4byte	0x241
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 72
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 72
 
 
  2580 04f4 10       		.uleb128 0x10
@@ -4277,7 +4277,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2593 0511 6B000000 		.4byte	0x6b
  2594 0515 46010000 		.4byte	.LLST7
  2595 0519 19       		.uleb128 0x19
- 2596 051a E1050000 		.4byte	.LASF70
+ 2596 051a 8D050000 		.4byte	.LASF70
  2597 051e 01       		.byte	0x1
  2598 051f 2803     		.2byte	0x328
  2599 0521 6B000000 		.4byte	0x6b
@@ -4301,7 +4301,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2617 054f 6B000000 		.4byte	0x6b
  2618 0553 B4010000 		.4byte	.LLST11
  2619 0557 19       		.uleb128 0x19
- 2620 0558 85050000 		.4byte	.LASF68
+ 2620 0558 31050000 		.4byte	.LASF68
  2621 055c 01       		.byte	0x1
  2622 055d 2D03     		.2byte	0x32d
  2623 055f E9040000 		.4byte	0x4e9
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2634 0580 00       		.byte	0
  2635 0581 09       		.uleb128 0x9
  2636 0582 04       		.byte	0x4
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 73
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 73
 
 
  2637 0583 87050000 		.4byte	0x587
@@ -4344,7 +4344,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2657 05b7 9C       		.byte	0x9c
  2658 05b8 F6050000 		.4byte	0x5f6
  2659 05bc 19       		.uleb128 0x19
- 2660 05bd 85050000 		.4byte	.LASF68
+ 2660 05bd 31050000 		.4byte	.LASF68
  2661 05c1 01       		.byte	0x1
  2662 05c2 0904     		.2byte	0x409
  2663 05c4 E9040000 		.4byte	0x4e9
@@ -4378,12 +4378,12 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2691 060d EC010000 		.4byte	.LFE4-.LFB4
  2692 0611 01       		.uleb128 0x1
  2693 0612 9C       		.byte	0x9c
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 74
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 74
 
 
  2694 0613 FA060000 		.4byte	0x6fa
  2695 0617 11       		.uleb128 0x11
- 2696 0618 2D060000 		.4byte	.LASF78
+ 2696 0618 D9050000 		.4byte	.LASF78
  2697 061c 01       		.byte	0x1
  2698 061d 3A02     		.2byte	0x23a
  2699 061f 6B000000 		.4byte	0x6b
@@ -4395,7 +4395,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2705 062e 6B000000 		.4byte	0x6b
  2706 0632 77020000 		.4byte	.LLST18
  2707 0636 19       		.uleb128 0x19
- 2708 0637 E1050000 		.4byte	.LASF70
+ 2708 0637 8D050000 		.4byte	.LASF70
  2709 063b 01       		.byte	0x1
  2710 063c 3D02     		.2byte	0x23d
  2711 063e 6B000000 		.4byte	0x6b
@@ -4419,13 +4419,13 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2729 066c F6050000 		.4byte	0x5f6
  2730 0670 B0030000 		.4byte	.LLST22
  2731 0674 19       		.uleb128 0x19
- 2732 0675 1A050000 		.4byte	.LASF80
+ 2732 0675 C6040000 		.4byte	.LASF80
  2733 0679 01       		.byte	0x1
  2734 067a 4302     		.2byte	0x243
  2735 067c 77000000 		.4byte	0x77
  2736 0680 CF030000 		.4byte	.LLST23
  2737 0684 19       		.uleb128 0x19
- 2738 0685 85050000 		.4byte	.LASF68
+ 2738 0685 31050000 		.4byte	.LASF68
  2739 0689 01       		.byte	0x1
  2740 068a 4602     		.2byte	0x246
  2741 068c E9040000 		.4byte	0x4e9
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2748 06a0 3D040000 		.4byte	.LLST25
  2749 06a4 1C       		.uleb128 0x1c
  2750 06a5 54000000 		.4byte	.LBB2
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 75
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 75
 
 
  2751 06a9 98010000 		.4byte	.LBE2-.LBB2
@@ -4498,11 +4498,11 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2805 0718 6B000000 		.4byte	0x6b
  2806 071c 92040000 		.4byte	.LLST27
  2807 0720 00       		.byte	0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 76
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 76
 
 
  2808 0721 18       		.uleb128 0x18
- 2809 0722 9C050000 		.4byte	.LASF84
+ 2809 0722 48050000 		.4byte	.LASF84
  2810 0726 01       		.byte	0x1
  2811 0727 5904     		.2byte	0x459
  2812 0729 6B000000 		.4byte	0x6b
@@ -4554,11 +4554,11 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2858 07a2 030B0000 		.4byte	0xb03
  2859 07a6 00       		.byte	0
  2860 07a7 18       		.uleb128 0x18
- 2861 07a8 66060000 		.4byte	.LASF87
+ 2861 07a8 12060000 		.4byte	.LASF87
  2862 07ac 01       		.byte	0x1
  2863 07ad CF04     		.2byte	0x4cf
  2864 07af 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 77
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 77
 
 
  2865 07b3 00000000 		.4byte	.LFB12
@@ -4585,7 +4585,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2886 07e9 6B000000 		.4byte	0x6b
  2887 07ed CE050000 		.4byte	.LLST34
  2888 07f1 19       		.uleb128 0x19
- 2889 07f2 85050000 		.4byte	.LASF68
+ 2889 07f2 31050000 		.4byte	.LASF68
  2890 07f6 01       		.byte	0x1
  2891 07f7 D504     		.2byte	0x4d5
  2892 07f9 E9040000 		.4byte	0x4e9
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2919 083e BF070000 		.4byte	.LLST37
  2920 0842 1F       		.uleb128 0x1f
  2921 0843 37000000 		.4byte	.LASF91
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 78
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 78
 
 
  2922 0847 01       		.byte	0x1
@@ -4632,19 +4632,19 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2930 0858 6B000000 		.4byte	0x6b
  2931 085c E5070000 		.4byte	.LLST39
  2932 0860 1F       		.uleb128 0x1f
- 2933 0861 F8050000 		.4byte	.LASF93
+ 2933 0861 A4050000 		.4byte	.LASF93
  2934 0865 01       		.byte	0x1
  2935 0866 5C       		.byte	0x5c
  2936 0867 04020000 		.4byte	0x204
  2937 086b 66080000 		.4byte	.LLST40
  2938 086f 1F       		.uleb128 0x1f
- 2939 0870 E7050000 		.4byte	.LASF94
+ 2939 0870 93050000 		.4byte	.LASF94
  2940 0874 01       		.byte	0x1
  2941 0875 5E       		.byte	0x5e
  2942 0876 6B000000 		.4byte	0x6b
  2943 087a CA080000 		.4byte	.LLST41
  2944 087e 1F       		.uleb128 0x1f
- 2945 087f 21060000 		.4byte	.LASF95
+ 2945 087f CD050000 		.4byte	.LASF95
  2946 0883 01       		.byte	0x1
  2947 0884 5F       		.byte	0x5f
  2948 0885 6B000000 		.4byte	0x6b
@@ -4658,7 +4658,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2956 0899 03       		.byte	0x3
  2957 089a 00000000 		.4byte	myUSB_tBuffer.5250
  2958 089e 1F       		.uleb128 0x1f
- 2959 089f 85050000 		.4byte	.LASF68
+ 2959 089f 31050000 		.4byte	.LASF68
  2960 08a3 01       		.byte	0x1
  2961 08a4 64       		.byte	0x64
  2962 08a5 E9040000 		.4byte	0x4e9
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  2976 08d1 1D       		.uleb128 0x1d
  2977 08d2 D8000000 		.4byte	.LVL152
  2978 08d6 D2030000 		.4byte	0x3d2
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 79
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 79
 
 
  2979 08da E5080000 		.4byte	0x8e5
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3033 0955 E4010000 		.4byte	.LVL179
  3034 0959 A7070000 		.4byte	0x7a7
  3035 095d 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 80
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 80
 
 
  3036 095e 12020000 		.4byte	.LVL182
@@ -4785,7 +4785,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3077 09cd D402     		.2byte	0x2d4
  3078 09cf BC000000 		.4byte	0xbc
  3079 09d3 21       		.uleb128 0x21
- 3080 09d4 E9040000 		.4byte	.LASF99
+ 3080 09d4 95040000 		.4byte	.LASF99
  3081 09d8 03       		.byte	0x3
  3082 09d9 D502     		.2byte	0x2d5
  3083 09db BC000000 		.4byte	0xbc
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3090 09ec FC050000 		.4byte	0x5fc
  3091 09f0 FB090000 		.4byte	0x9fb
  3092 09f4 0D       		.uleb128 0xd
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 81
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 81
 
 
  3093 09f5 C8000000 		.4byte	0xc8
@@ -4833,7 +4833,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3122 0a39 9E       		.byte	0x9e
  3123 0a3a 00       		.byte	0
  3124 0a3b 22       		.uleb128 0x22
- 3125 0a3c 4D060000 		.4byte	.LASF103
+ 3125 0a3c F9050000 		.4byte	.LASF103
  3126 0a40 04       		.byte	0x4
  3127 0a41 69       		.byte	0x69
  3128 0a42 460A0000 		.4byte	0xa46
@@ -4847,7 +4847,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3136 0a59 21       		.byte	0x21
  3137 0a5a 00       		.byte	0
  3138 0a5b 22       		.uleb128 0x22
- 3139 0a5c C4040000 		.4byte	.LASF104
+ 3139 0a5c 70040000 		.4byte	.LASF104
  3140 0a60 04       		.byte	0x4
  3141 0a61 6F       		.byte	0x6f
  3142 0a62 4B0A0000 		.4byte	0xa4b
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3147 0a6d BC000000 		.4byte	0xbc
  3148 0a71 22       		.uleb128 0x22
  3149 0a72 F1000000 		.4byte	.LASF106
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 82
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 82
 
 
  3150 0a76 04       		.byte	0x4
@@ -4874,12 +4874,12 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3160 0a8c 05       		.uleb128 0x5
  3161 0a8d A6090000 		.4byte	0x9a6
  3162 0a91 22       		.uleb128 0x22
- 3163 0a92 B2050000 		.4byte	.LASF108
+ 3163 0a92 5E050000 		.4byte	.LASF108
  3164 0a96 04       		.byte	0x4
  3165 0a97 75       		.byte	0x75
  3166 0a98 BC000000 		.4byte	0xbc
  3167 0a9c 22       		.uleb128 0x22
- 3168 0a9d 04050000 		.4byte	.LASF109
+ 3168 0a9d B0040000 		.4byte	.LASF109
  3169 0aa1 04       		.byte	0x4
  3170 0aa2 76       		.byte	0x76
  3171 0aa3 A70A0000 		.4byte	0xaa7
@@ -4907,18 +4907,18 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3193 0ad7 05       		.uleb128 0x5
  3194 0ad8 B70A0000 		.4byte	0xab7
  3195 0adc 22       		.uleb128 0x22
- 3196 0add 85060000 		.4byte	.LASF112
+ 3196 0add 31060000 		.4byte	.LASF112
  3197 0ae1 04       		.byte	0x4
  3198 0ae2 7A       		.byte	0x7a
  3199 0ae3 E70A0000 		.4byte	0xae7
  3200 0ae7 05       		.uleb128 0x5
  3201 0ae8 10020000 		.4byte	0x210
  3202 0aec 23       		.uleb128 0x23
- 3203 0aed 13060000 		.4byte	.LASF113
- 3204 0af1 13060000 		.4byte	.LASF113
+ 3203 0aed BF050000 		.4byte	.LASF113
+ 3204 0af1 BF050000 		.4byte	.LASF113
  3205 0af5 05       		.byte	0x5
  3206 0af6 BE       		.byte	0xbe
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 83
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 83
 
 
  3207 0af7 24       		.uleb128 0x24
@@ -4937,8 +4937,8 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3220 0b17 04       		.byte	0x4
  3221 0b18 A9       		.byte	0xa9
  3222 0b19 24       		.uleb128 0x24
- 3223 0b1a 67050000 		.4byte	.LASF117
- 3224 0b1e 67050000 		.4byte	.LASF117
+ 3223 0b1a 13050000 		.4byte	.LASF117
+ 3224 0b1e 13050000 		.4byte	.LASF117
  3225 0b22 04       		.byte	0x4
  3226 0b23 4F01     		.2byte	0x14f
  3227 0b25 00       		.byte	0
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3261 001f 24       		.uleb128 0x24
  3262 0020 00       		.byte	0
  3263 0021 0B       		.uleb128 0xb
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 84
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 84
 
 
  3264 0022 0B       		.uleb128 0xb
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3318 0058 00       		.byte	0
  3319 0059 08       		.uleb128 0x8
  3320 005a 16       		.uleb128 0x16
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 85
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 85
 
 
  3321 005b 00       		.byte	0
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3375 0091 2F       		.uleb128 0x2f
  3376 0092 0B       		.uleb128 0xb
  3377 0093 00       		.byte	0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 86
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 86
 
 
  3378 0094 00       		.byte	0
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3432 00cb 11       		.uleb128 0x11
  3433 00cc 05       		.uleb128 0x5
  3434 00cd 00       		.byte	0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 87
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 87
 
 
  3435 00ce 03       		.uleb128 0x3
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3489 0104 18       		.uleb128 0x18
  3490 0105 00       		.byte	0
  3491 0106 00       		.byte	0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 88
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 88
 
 
  3492 0107 15       		.uleb128 0x15
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3546 0143 00       		.byte	0
  3547 0144 03       		.uleb128 0x3
  3548 0145 0E       		.uleb128 0xe
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 89
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 89
 
 
  3549 0146 3A       		.uleb128 0x3a
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3603 017f 898201   		.uleb128 0x4109
  3604 0182 01       		.byte	0x1
  3605 0183 11       		.uleb128 0x11
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 90
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 90
 
 
  3606 0184 01       		.uleb128 0x1
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3660 01bb 3A       		.uleb128 0x3a
  3661 01bc 0B       		.uleb128 0xb
  3662 01bd 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 91
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 91
 
 
  3663 01be 0B       		.uleb128 0xb
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3717 01f4 3B       		.uleb128 0x3b
  3718 01f5 0B       		.uleb128 0xb
  3719 01f6 00       		.byte	0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 92
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 92
 
 
  3720 01f7 00       		.byte	0
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3774 0052 00000000 		.4byte	0
  3775              	.LLST2:
  3776 0056 12000000 		.4byte	.LVL2
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 93
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 93
 
 
  3777 005a 28000000 		.4byte	.LVL4
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3831 00e9 F3       		.byte	0xf3
  3832 00ea 01       		.uleb128 0x1
  3833 00eb 50       		.byte	0x50
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 94
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 94
 
 
  3834 00ec 9F       		.byte	0x9f
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3888 0174 0100     		.2byte	0x1
  3889 0176 56       		.byte	0x56
  3890 0177 92000000 		.4byte	.LVL35
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 95
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 95
 
 
  3891 017b 9E000000 		.4byte	.LVL36
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  3945 0209 20000000 		.4byte	.LVL48
  3946 020d 0100     		.2byte	0x1
  3947 020f 50       		.byte	0x50
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 96
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 96
 
 
  3948 0210 00000000 		.4byte	0
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4002 0299 42000000 		.4byte	.LVL57
  4003 029d 44000000 		.4byte	.LVL58
  4004 02a1 0100     		.2byte	0x1
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 97
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 97
 
 
  4005 02a3 53       		.byte	0x53
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4059 0330 8E000000 		.4byte	.LVL68
  4060 0334 6C010000 		.4byte	.LVL82
  4061 0338 0100     		.2byte	0x1
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 98
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 98
 
 
  4062 033a 56       		.byte	0x56
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4116 03b8 0100     		.2byte	0x1
  4117 03ba 53       		.byte	0x53
  4118 03bb 66000000 		.4byte	.LVL65
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 99
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 99
 
 
  4119 03bf 8E000000 		.4byte	.LVL68
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4173 0447 55       		.byte	0x55
  4174 0448 76010000 		.4byte	.LVL84
  4175 044c 84010000 		.4byte	.LVL86
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 100
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 100
 
 
  4176 0450 0100     		.2byte	0x1
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4230 04dc 30       		.byte	0x30
  4231 04dd 9F       		.byte	0x9f
  4232 04de 56000000 		.4byte	.LVL112
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 101
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 101
 
 
  4233 04e2 64000000 		.4byte	.LFE10
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4287 0571 9A000000 		.4byte	.LVL124
  4288 0575 AC000000 		.4byte	.LFE11
  4289 0579 0100     		.2byte	0x1
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 102
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 102
 
 
  4290 057b 53       		.byte	0x53
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4344 0603 0100     		.2byte	0x1
  4345 0605 50       		.byte	0x50
  4346 0606 36000000 		.4byte	.LVL132
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 103
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 103
 
 
  4347 060a 38000000 		.4byte	.LVL133
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4401 0696 30       		.byte	0x30
  4402 0697 9F       		.byte	0x9f
  4403 0698 48010000 		.4byte	.LVL161
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 104
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 104
 
 
  4404 069c 4A010000 		.4byte	.LVL162
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4458 0726 36020000 		.4byte	.LVL187
  4459 072a 0100     		.2byte	0x1
  4460 072c 50       		.byte	0x50
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 105
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 105
 
 
  4461 072d 36020000 		.4byte	.LVL187
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4515 07b7 00000000 		.4byte	0
  4516 07bb 00000000 		.4byte	0
  4517              	.LLST37:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 106
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 106
 
 
  4518 07bf F0010000 		.4byte	.LVL180
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4572 0853 1A030000 		.4byte	.LVL203
  4573 0857 1E030000 		.4byte	.LVL204
  4574 085b 0100     		.2byte	0x1
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 107
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 107
 
 
  4575 085d 53       		.byte	0x53
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4629 08ea 53       		.byte	0x53
  4630 08eb 00000000 		.4byte	0
  4631 08ef 00000000 		.4byte	0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 108
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 108
 
 
  4632              	.LLST42:
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4686 0050 00000000 		.4byte	.LFB9
  4687 0054 4C000000 		.4byte	.LFE9-.LFB9
  4688 0058 00000000 		.4byte	.LFB10
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 109
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 109
 
 
  4689 005c 64000000 		.4byte	.LFE10-.LFB10
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4734      72756374 
  4735              	.LASF82:
  4736 001a 6D795553 		.ascii	"myUSB_TerminateEP\000"
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 110
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 110
 
 
  4736      425F5465 
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4757              	.LASF92:
  4758 00ca 626D5265 		.ascii	"bmRequestType\000"
  4758      71756573 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 111
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 111
 
 
  4758      74547970 
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4784 0178 6C6F6E67 		.ascii	"long long unsigned int\000"
  4784      206C6F6E 
  4784      6720756E 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 112
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 112
 
 
  4784      7369676E 
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4804 028e 545F6D79 		.ascii	"T_myUSB_EP_CTL_BLOCK\000"
  4804      5553425F 
  4804      45505F43 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 113
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 113
 
 
  4804      544C5F42 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4830 0336 63686172 		.ascii	"char8\000"
  4830      3800
  4831              	.LASF25:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 114
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 114
 
 
  4832 033c 62756666 		.ascii	"buffOffset\000"
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4859              	.LASF75:
  4860 03da 70496E74 		.ascii	"pInterfaceClass\000"
  4860      65726661 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 115
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 115
 
 
  4860      6365436C 
@@ -6880,191 +6880,191 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4874 0464 6C6F6E67 		.ascii	"long double\000"
  4874      20646F75 
  4874      626C6500 
- 4875              	.LASF120:
- 4876 0470 433A5C55 		.ascii	"C:\\Users\\danaukes\\code\\code_psoc_photon_transpo"
- 4876      73657273 
- 4876      5C64616E 
- 4876      61756B65 
- 4876      735C636F 
- 4877 049f 6E646572 		.ascii	"nder\\psoc\\Workspace01\\Design01.cydsn\000"
- 4877      5C70736F 
- 4877      635C576F 
- 4877      726B7370 
- 4877      61636530 
- 4878              	.LASF104:
- 4879 04c4 6D795553 		.ascii	"myUSB_idSerialNumberStringDescriptor\000"
- 4879      425F6964 
- 4879      53657269 
- 4879      616C4E75 
- 4879      6D626572 
- 4880              	.LASF99:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 116
+ 4875              	.LASF104:
+ 4876 0470 6D795553 		.ascii	"myUSB_idSerialNumberStringDescriptor\000"
+ 4876      425F6964 
+ 4876      53657269 
+ 4876      616C4E75 
+ 4876      6D626572 
+ 4877              	.LASF99:
+ 4878 0495 6D795553 		.ascii	"myUSB_configurationChanged\000"
+ 4878      425F636F 
+ 4878      6E666967 
+ 4878      75726174 
+ 4878      696F6E43 
+ 4879              	.LASF109:
+ 4880 04b0 6D795553 		.ascii	"myUSB_interfaceStatus\000"
+ 4880      425F696E 
+ 4880      74657266 
+ 4880      61636553 
+ 4880      74617475 
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 116
 
 
- 4881 04e9 6D795553 		.ascii	"myUSB_configurationChanged\000"
- 4881      425F636F 
- 4881      6E666967 
- 4881      75726174 
- 4881      696F6E43 
- 4882              	.LASF109:
- 4883 0504 6D795553 		.ascii	"myUSB_interfaceStatus\000"
- 4883      425F696E 
- 4883      74657266 
- 4883      61636553 
- 4883      74617475 
- 4884              	.LASF80:
- 4885 051a 62756666 		.ascii	"buffCount\000"
- 4885      436F756E 
- 4885      7400
- 4886              	.LASF2:
- 4887 0524 73686F72 		.ascii	"short int\000"
- 4887      7420696E 
- 4887      7400
- 4888              	.LASF24:
- 4889 052e 65704D6F 		.ascii	"epMode\000"
- 4889      646500
- 4890              	.LASF4:
- 4891 0535 6C6F6E67 		.ascii	"long int\000"
- 4891      20696E74 
- 4891      00
- 4892              	.LASF34:
- 4893 053e 6C656E67 		.ascii	"length\000"
- 4893      746800
- 4894              	.LASF32:
- 4895 0545 545F6D79 		.ascii	"T_myUSB_EP_SETTINGS_BLOCK\000"
- 4895      5553425F 
- 4895      45505F53 
- 4895      45545449 
- 4895      4E47535F 
- 4896              	.LASF55:
- 4897 055f 72775261 		.ascii	"rwRaMsb\000"
- 4897      4D736200 
- 4898              	.LASF117:
- 4899 0567 6D795553 		.ascii	"myUSB_DispatchClassRqst\000"
- 4899      425F4469 
- 4899      73706174 
- 4899      6368436C 
- 4899      61737352 
- 4900              	.LASF48:
- 4901 057f 65704366 		.ascii	"epCfg\000"
- 4901      6700
- 4902              	.LASF68:
- 4903 0585 70546D70 		.ascii	"pTmp\000"
- 4903      00
- 4904              	.LASF65:
- 4905 058a 6D795553 		.ascii	"myUSB_EpStateInit\000"
- 4905      425F4570 
- 4905      53746174 
- 4905      65496E69 
- 4905      7400
- 4906              	.LASF84:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 117
+ 4881              	.LASF80:
+ 4882 04c6 62756666 		.ascii	"buffCount\000"
+ 4882      436F756E 
+ 4882      7400
+ 4883              	.LASF2:
+ 4884 04d0 73686F72 		.ascii	"short int\000"
+ 4884      7420696E 
+ 4884      7400
+ 4885              	.LASF24:
+ 4886 04da 65704D6F 		.ascii	"epMode\000"
+ 4886      646500
+ 4887              	.LASF4:
+ 4888 04e1 6C6F6E67 		.ascii	"long int\000"
+ 4888      20696E74 
+ 4888      00
+ 4889              	.LASF34:
+ 4890 04ea 6C656E67 		.ascii	"length\000"
+ 4890      746800
+ 4891              	.LASF32:
+ 4892 04f1 545F6D79 		.ascii	"T_myUSB_EP_SETTINGS_BLOCK\000"
+ 4892      5553425F 
+ 4892      45505F53 
+ 4892      45545449 
+ 4892      4E47535F 
+ 4893              	.LASF55:
+ 4894 050b 72775261 		.ascii	"rwRaMsb\000"
+ 4894      4D736200 
+ 4895              	.LASF117:
+ 4896 0513 6D795553 		.ascii	"myUSB_DispatchClassRqst\000"
+ 4896      425F4469 
+ 4896      73706174 
+ 4896      6368436C 
+ 4896      61737352 
+ 4897              	.LASF48:
+ 4898 052b 65704366 		.ascii	"epCfg\000"
+ 4898      6700
+ 4899              	.LASF68:
+ 4900 0531 70546D70 		.ascii	"pTmp\000"
+ 4900      00
+ 4901              	.LASF65:
+ 4902 0536 6D795553 		.ascii	"myUSB_EpStateInit\000"
+ 4902      425F4570 
+ 4902      53746174 
+ 4902      65496E69 
+ 4902      7400
+ 4903              	.LASF84:
+ 4904 0548 6D795553 		.ascii	"myUSB_SetEndpointHalt\000"
+ 4904      425F5365 
+ 4904      74456E64 
+ 4904      706F696E 
+ 4904      7448616C 
+ 4905              	.LASF108:
+ 4906 055e 6D795553 		.ascii	"myUSB_deviceAddress\000"
+ 4906      425F6465 
+ 4906      76696365 
+ 4906      41646472 
+ 4906      65737300 
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 117
 
 
- 4907 059c 6D795553 		.ascii	"myUSB_SetEndpointHalt\000"
- 4907      425F5365 
- 4907      74456E64 
- 4907      706F696E 
- 4907      7448616C 
- 4908              	.LASF108:
- 4909 05b2 6D795553 		.ascii	"myUSB_deviceAddress\000"
- 4909      425F6465 
- 4909      76696365 
- 4909      41646472 
- 4909      65737300 
- 4910              	.LASF18:
- 4911 05c6 73697A65 		.ascii	"sizetype\000"
- 4911      74797065 
- 4911      00
- 4912              	.LASF5:
- 4913 05cf 6C6F6E67 		.ascii	"long unsigned int\000"
- 4913      20756E73 
- 4913      69676E65 
- 4913      6420696E 
- 4913      7400
- 4914              	.LASF70:
- 4915 05e1 63757245 		.ascii	"curEp\000"
- 4915      7000
- 4916              	.LASF94:
- 4917 05e7 6E537472 		.ascii	"nStr\000"
- 4917      00
- 4918              	.LASF50:
- 4919 05ec 65705372 		.ascii	"epSr\000"
- 4919      00
- 4920              	.LASF40:
- 4921 05f1 705F6C69 		.ascii	"p_list\000"
- 4921      737400
- 4922              	.LASF93:
- 4923 05f8 70537472 		.ascii	"pStr\000"
- 4923      00
- 4924              	.LASF53:
- 4925 05fd 72775761 		.ascii	"rwWaMsb\000"
- 4925      4D736200 
- 4926              	.LASF1:
- 4927 0605 756E7369 		.ascii	"unsigned char\000"
- 4927      676E6564 
- 4927      20636861 
- 4927      7200
- 4928              	.LASF113:
- 4929 0613 43794765 		.ascii	"CyGetUniqueId\000"
- 4929      74556E69 
- 4929      71756549 
- 4929      6400
- 4930              	.LASF95:
- 4931 0621 64657363 		.ascii	"descrLength\000"
- 4931      724C656E 
- 4931      67746800 
- 4932              	.LASF78:
- 4933 062d 636C6561 		.ascii	"clearAltSetting\000"
- 4933      72416C74 
- 4933      53657474 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 118
+ 4907              	.LASF18:
+ 4908 0572 73697A65 		.ascii	"sizetype\000"
+ 4908      74797065 
+ 4908      00
+ 4909              	.LASF5:
+ 4910 057b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4910      20756E73 
+ 4910      69676E65 
+ 4910      6420696E 
+ 4910      7400
+ 4911              	.LASF70:
+ 4912 058d 63757245 		.ascii	"curEp\000"
+ 4912      7000
+ 4913              	.LASF94:
+ 4914 0593 6E537472 		.ascii	"nStr\000"
+ 4914      00
+ 4915              	.LASF50:
+ 4916 0598 65705372 		.ascii	"epSr\000"
+ 4916      00
+ 4917              	.LASF40:
+ 4918 059d 705F6C69 		.ascii	"p_list\000"
+ 4918      737400
+ 4919              	.LASF93:
+ 4920 05a4 70537472 		.ascii	"pStr\000"
+ 4920      00
+ 4921              	.LASF53:
+ 4922 05a9 72775761 		.ascii	"rwWaMsb\000"
+ 4922      4D736200 
+ 4923              	.LASF1:
+ 4924 05b1 756E7369 		.ascii	"unsigned char\000"
+ 4924      676E6564 
+ 4924      20636861 
+ 4924      7200
+ 4925              	.LASF113:
+ 4926 05bf 43794765 		.ascii	"CyGetUniqueId\000"
+ 4926      74556E69 
+ 4926      71756549 
+ 4926      6400
+ 4927              	.LASF95:
+ 4928 05cd 64657363 		.ascii	"descrLength\000"
+ 4928      724C656E 
+ 4928      67746800 
+ 4929              	.LASF78:
+ 4930 05d9 636C6561 		.ascii	"clearAltSetting\000"
+ 4930      72416C74 
+ 4930      53657474 
+ 4930      696E6700 
+ 4931              	.LASF30:
+ 4932 05e9 61747472 		.ascii	"attributes\000"
+ 4932      69627574 
+ 4932      657300
+ 4933              	.LASF23:
+ 4934 05f4 61646472 		.ascii	"addr\000"
+ 4934      00
+ 4935              	.LASF103:
+ 4936 05f9 6D795553 		.ascii	"myUSB_STRING_DESCRIPTORS\000"
+ 4936      425F5354 
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 118
 
 
- 4933      696E6700 
- 4934              	.LASF30:
- 4935 063d 61747472 		.ascii	"attributes\000"
- 4935      69627574 
- 4935      657300
- 4936              	.LASF23:
- 4937 0648 61646472 		.ascii	"addr\000"
- 4937      00
- 4938              	.LASF103:
- 4939 064d 6D795553 		.ascii	"myUSB_STRING_DESCRIPTORS\000"
- 4939      425F5354 
- 4939      52494E47 
- 4939      5F444553 
- 4939      43524950 
- 4940              	.LASF87:
- 4941 0666 6D795553 		.ascii	"myUSB_ValidateAlternateSetting\000"
- 4941      425F5661 
- 4941      6C696461 
- 4941      7465416C 
- 4941      7465726E 
- 4942              	.LASF112:
- 4943 0685 6D795553 		.ascii	"myUSB_currentTD\000"
- 4943      425F6375 
- 4943      7272656E 
- 4943      74544400 
- 4944              	.LASF54:
- 4945 0695 72775261 		.ascii	"rwRa\000"
- 4945      00
- 4946              	.LASF0:
- 4947 069a 7369676E 		.ascii	"signed char\000"
- 4947      65642063 
- 4947      68617200 
- 4948              	.LASF3:
- 4949 06a6 73686F72 		.ascii	"short unsigned int\000"
- 4949      7420756E 
- 4949      7369676E 
- 4949      65642069 
- 4949      6E7400
- 4950              	.LASF35:
- 4951 06b9 545F6D79 		.ascii	"T_myUSB_XFER_STATUS_BLOCK\000"
- 4951      5553425F 
- 4951      58464552 
- 4951      5F535441 
- 4951      5455535F 
+ 4936      52494E47 
+ 4936      5F444553 
+ 4936      43524950 
+ 4937              	.LASF87:
+ 4938 0612 6D795553 		.ascii	"myUSB_ValidateAlternateSetting\000"
+ 4938      425F5661 
+ 4938      6C696461 
+ 4938      7465416C 
+ 4938      7465726E 
+ 4939              	.LASF112:
+ 4940 0631 6D795553 		.ascii	"myUSB_currentTD\000"
+ 4940      425F6375 
+ 4940      7272656E 
+ 4940      74544400 
+ 4941              	.LASF54:
+ 4942 0641 72775261 		.ascii	"rwRa\000"
+ 4942      00
+ 4943              	.LASF0:
+ 4944 0646 7369676E 		.ascii	"signed char\000"
+ 4944      65642063 
+ 4944      68617200 
+ 4945              	.LASF3:
+ 4946 0652 73686F72 		.ascii	"short unsigned int\000"
+ 4946      7420756E 
+ 4946      7369676E 
+ 4946      65642069 
+ 4946      6E7400
+ 4947              	.LASF35:
+ 4948 0665 545F6D79 		.ascii	"T_myUSB_XFER_STATUS_BLOCK\000"
+ 4948      5553425F 
+ 4948      58464552 
+ 4948      5F535441 
+ 4948      5455535F 
+ 4949              	.LASF120:
+ 4950 067f 433A5C55 		.ascii	"C:\\Users\\danaukes\\code\\code_psoc_photon_transpo"
+ 4950      73657273 
+ 4950      5C64616E 
+ 4950      61756B65 
+ 4950      735C636F 
+ 4951 06ae 6E646572 		.ascii	"nder\\psoc\\Workspace02\\Design01.cydsn\000"
+ 4951      5C70736F 
+ 4951      635C576F 
+ 4951      726B7370 
+ 4951      61636530 
  4952              	.LASF62:
  4953 06d3 756E6971 		.ascii	"uniqueId\000"
  4953      75654964 
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 1
  4957      425F636F 
  4957      6E666967 
  4957      75726174 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccZx3i6u.s 			page 119
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cccXhROe.s 			page 119
 
 
  4957      696F6E00 

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
   28:Generated_Source\PSoC5/myUSB_pm.c **** /***************************************
   29:Generated_Source\PSoC5/myUSB_pm.c **** * Local data allocation
   30:Generated_Source\PSoC5/myUSB_pm.c **** ***************************************/
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 2
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 2
 
 
   31:Generated_Source\PSoC5/myUSB_pm.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
   62:Generated_Source\PSoC5/myUSB_pm.c **** /*******************************************************************************
   63:Generated_Source\PSoC5/myUSB_pm.c **** * Function Name: myUSB_SaveConfig
   64:Generated_Source\PSoC5/myUSB_pm.c **** ****************************************************************************//**
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 3
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 3
 
 
   65:Generated_Source\PSoC5/myUSB_pm.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
   79 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
   80 0006 13F0FF0F 		tst	r3, #255
   81 000a 03D0     		beq	.L4
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 4
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 4
 
 
   91:Generated_Source\PSoC5/myUSB_pm.c ****     {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  122:Generated_Source\PSoC5/myUSB_pm.c **** *******************************************************************************/
  123:Generated_Source\PSoC5/myUSB_pm.c **** void myUSB_Suspend(void) 
  124:Generated_Source\PSoC5/myUSB_pm.c **** {
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 5
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 5
 
 
  105              		.loc 1 124 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  131              		.loc 1 152 0
  132 0018 264A     		ldr	r2, .L13+8
  133 001a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 6
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 6
 
 
  134 001c 03F07F03 		and	r3, r3, #127
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  170 005e 2B70     		strb	r3, [r5]
  171:Generated_Source\PSoC5/myUSB_pm.c **** 
  172:Generated_Source\PSoC5/myUSB_pm.c ****         /* Switch DP and DM terminals to GPIO mode and disconnect 1.5k pull-up. */
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 7
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 7
 
 
  173:Generated_Source\PSoC5/myUSB_pm.c ****         myUSB_USBIO_CR1_REG |= myUSB_USBIO_CR1_IOMODE;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  193:Generated_Source\PSoC5/myUSB_pm.c ****     CyIntClearPending(myUSB_DP_INTC_VECT_NUM);
  205              		.loc 1 193 0
  206 009a 4FF48053 		mov	r3, #4096
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 8
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 8
 
 
  207 009e 094A     		ldr	r2, .L13+24
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  220:Generated_Source\PSoC5/myUSB_pm.c **** * \globalvars
  221:Generated_Source\PSoC5/myUSB_pm.c **** *  myUSB_backup - checked.
  222:Generated_Source\PSoC5/myUSB_pm.c **** *
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 9
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 9
 
 
  223:Generated_Source\PSoC5/myUSB_pm.c **** * \reentrant
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  253:Generated_Source\PSoC5/myUSB_pm.c ****             myUSB_ARB_CFG_REG = myUSB_DEFAULT_ARB_CFG;
  254:Generated_Source\PSoC5/myUSB_pm.c ****         #endif /* (myUSB_EP_MANAGEMENT_DMA) */
  255:Generated_Source\PSoC5/myUSB_pm.c **** 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 10
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 10
 
 
  256:Generated_Source\PSoC5/myUSB_pm.c ****         /* Restore level (hi, lo, med) for each interrupt source. */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  289:Generated_Source\PSoC5/myUSB_pm.c ****         CyDelayUs(myUSB_WAIT_VREF_RESTORE);
  280              		.loc 1 289 0
  281 0044 2820     		movs	r0, #40
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 11
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 11
 
 
  282 0046 FFF7FEFF 		bl	CyDelayUs
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  315:Generated_Source\PSoC5/myUSB_pm.c **** 
  316:Generated_Source\PSoC5/myUSB_pm.c ****         /* Enable the USB IP to respond to USB traffic with the last address. */
  317:Generated_Source\PSoC5/myUSB_pm.c ****         myUSB_CR0_REG |= myUSB_CR0_ENABLE;
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 12
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 12
 
 
  311              		.loc 1 317 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  354 0000 0000     		.space	2
  355              		.text
  356              	.Letext0:
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 13
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 13
 
 
  357              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
@@ -733,10 +733,10 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  366 0006 00000000 		.4byte	.Ldebug_abbrev0
  367 000a 04       		.byte	0x4
  368 000b 01       		.uleb128 0x1
- 369 000c 06010000 		.4byte	.LASF34
+ 369 000c B2000000 		.4byte	.LASF34
  370 0010 0C       		.byte	0xc
  371 0011 14000000 		.4byte	.LASF35
- 372 0015 4A000000 		.4byte	.LASF36
+ 372 0015 6A010000 		.4byte	.LASF36
  373 0019 00000000 		.4byte	.Ldebug_ranges0+0
  374 001d 00000000 		.4byte	0
  375 0021 00000000 		.4byte	.Ldebug_line0
@@ -747,7 +747,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  380 002c 02       		.uleb128 0x2
  381 002d 01       		.byte	0x1
  382 002e 08       		.byte	0x8
- 383 002f F8000000 		.4byte	.LASF1
+ 383 002f A4000000 		.4byte	.LASF1
  384 0033 02       		.uleb128 0x2
  385 0034 02       		.byte	0x2
  386 0035 05       		.byte	0x5
@@ -755,7 +755,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  388 003a 02       		.uleb128 0x2
  389 003b 02       		.byte	0x2
  390 003c 07       		.byte	0x7
- 391 003d 9E000000 		.4byte	.LASF3
+ 391 003d 4A000000 		.4byte	.LASF3
  392 0041 02       		.uleb128 0x2
  393 0042 04       		.byte	0x4
  394 0043 05       		.byte	0x5
@@ -763,7 +763,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  396 0048 02       		.uleb128 0x2
  397 0049 04       		.byte	0x4
  398 004a 07       		.byte	0x7
- 399 004b A6010000 		.4byte	.LASF5
+ 399 004b 52010000 		.4byte	.LASF5
  400 004f 02       		.uleb128 0x2
  401 0050 08       		.byte	0x8
  402 0051 05       		.byte	0x5
@@ -771,20 +771,20 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  404 0056 02       		.uleb128 0x2
  405 0057 08       		.byte	0x8
  406 0058 07       		.byte	0x7
- 407 0059 E1000000 		.4byte	.LASF7
+ 407 0059 8D000000 		.4byte	.LASF7
  408 005d 03       		.uleb128 0x3
  409 005e 04       		.byte	0x4
  410 005f 05       		.byte	0x5
  411 0060 696E7400 		.ascii	"int\000"
  412 0064 02       		.uleb128 0x2
  413 0065 04       		.byte	0x4
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 14
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 14
 
 
  414 0066 07       		.byte	0x7
  415 0067 1F020000 		.4byte	.LASF8
  416 006b 04       		.uleb128 0x4
- 417 006c B8010000 		.4byte	.LASF9
+ 417 006c 64010000 		.4byte	.LASF9
  418 0070 02       		.byte	0x2
  419 0071 E401     		.2byte	0x1e4
  420 0073 2C000000 		.4byte	0x2c
@@ -796,7 +796,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  426 0083 02       		.uleb128 0x2
  427 0084 04       		.byte	0x4
  428 0085 04       		.byte	0x4
- 429 0086 DB000000 		.4byte	.LASF11
+ 429 0086 87000000 		.4byte	.LASF11
  430 008a 02       		.uleb128 0x2
  431 008b 08       		.byte	0x8
  432 008c 04       		.byte	0x4
@@ -806,7 +806,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  436 0093 08       		.byte	0x8
  437 0094 7F020000 		.4byte	.LASF13
  438 0098 04       		.uleb128 0x4
- 439 0099 A1010000 		.4byte	.LASF14
+ 439 0099 4D010000 		.4byte	.LASF14
  440 009d 02       		.byte	0x2
  441 009e 8E02     		.2byte	0x28e
  442 00a0 A4000000 		.4byte	0xa4
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  468 00d6 BA       		.byte	0xba
  469 00d7 6B000000 		.4byte	0x6b
  470 00db 00       		.byte	0
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 15
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 15
 
 
  471 00dc 07       		.uleb128 0x7
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  525 0157 C8000000 		.4byte	.LFE3-.LFB3
  526 015b 01       		.uleb128 0x1
  527 015c 9C       		.byte	0x9c
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 16
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 16
 
 
  528 015d E5010000 		.4byte	0x1e5
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  582 01cc CD020000 		.4byte	0x2cd
  583 01d0 DB010000 		.4byte	0x1db
  584 01d4 0E       		.uleb128 0xe
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 17
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 17
 
 
  585 01d5 01       		.uleb128 0x1
@@ -972,7 +972,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  593 01e0 96020000 		.4byte	0x296
  594 01e4 00       		.byte	0
  595 01e5 09       		.uleb128 0x9
- 596 01e6 94010000 		.4byte	.LASF24
+ 596 01e6 40010000 		.4byte	.LASF24
  597 01ea 01       		.byte	0x1
  598 01eb E3       		.byte	0xe3
  599 01ec 00000000 		.4byte	.LFB4
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  639 0247 01       		.uleb128 0x1
  640 0248 50       		.byte	0x50
  641 0249 01       		.uleb128 0x1
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 18
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 18
 
 
  642 024a 32       		.byte	0x32
@@ -1061,8 +1061,8 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  679 0290 D402     		.2byte	0x2d4
  680 0292 A4000000 		.4byte	0xa4
  681 0296 12       		.uleb128 0x12
- 682 0297 C3000000 		.4byte	.LASF27
- 683 029b C3000000 		.4byte	.LASF27
+ 682 0297 6F000000 		.4byte	.LASF27
+ 683 029b 6F000000 		.4byte	.LASF27
  684 029f 04       		.byte	0x4
  685 02a0 2B       		.byte	0x2b
  686 02a1 12       		.uleb128 0x12
@@ -1071,14 +1071,14 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  689 02aa 05       		.byte	0x5
  690 02ab BB       		.byte	0xbb
  691 02ac 12       		.uleb128 0x12
- 692 02ad B1000000 		.4byte	.LASF29
- 693 02b1 B1000000 		.4byte	.LASF29
+ 692 02ad 5D000000 		.4byte	.LASF29
+ 693 02b1 5D000000 		.4byte	.LASF29
  694 02b5 05       		.byte	0x5
  695 02b6 BC       		.byte	0xbc
  696 02b7 12       		.uleb128 0x12
  697 02b8 F4010000 		.4byte	.LASF30
  698 02bc F4010000 		.4byte	.LASF30
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 19
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 19
 
 
  699 02c0 06       		.byte	0x6
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  753 0022 0B       		.uleb128 0xb
  754 0023 3E       		.uleb128 0x3e
  755 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 20
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 20
 
 
  756 0025 03       		.uleb128 0x3
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  810 005b 00       		.byte	0
  811 005c 03       		.uleb128 0x3
  812 005d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 21
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 21
 
 
  813 005e 3A       		.uleb128 0x3a
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  867 0097 19       		.uleb128 0x19
  868 0098 11       		.uleb128 0x11
  869 0099 01       		.uleb128 0x1
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 22
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 22
 
 
  870 009a 12       		.uleb128 0x12
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  924 00d8 00       		.byte	0
  925 00d9 03       		.uleb128 0x3
  926 00da 0E       		.uleb128 0xe
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 23
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 23
 
 
  927 00db 3A       		.uleb128 0x3a
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  981              	.LLST1:
  982 0013 08000000 		.4byte	.LVL13
  983 0017 9A000000 		.4byte	.LVL20
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 24
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 24
 
 
  984 001b 0100     		.2byte	0x1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  1030 0014 47656E65 		.ascii	"Generated_Source\\PSoC5\\myUSB_pm.c\000"
  1030      72617465 
  1030      645F536F 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 25
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 25
 
 
  1030      75726365 
@@ -1449,85 +1449,85 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  1032      73746F72 
  1032      65436F6E 
  1032      66696700 
- 1033              	.LASF36:
- 1034 004a 433A5C55 		.ascii	"C:\\Users\\danaukes\\code\\code_psoc_photon_transpo"
- 1034      73657273 
- 1034      5C64616E 
- 1034      61756B65 
- 1034      735C636F 
- 1035 0079 6E646572 		.ascii	"nder\\psoc\\Workspace01\\Design01.cydsn\000"
- 1035      5C70736F 
- 1035      635C576F 
- 1035      726B7370 
- 1035      61636530 
- 1036              	.LASF3:
- 1037 009e 73686F72 		.ascii	"short unsigned int\000"
- 1037      7420756E 
- 1037      7369676E 
- 1037      65642069 
- 1037      6E7400
- 1038              	.LASF29:
- 1039 00b1 6D795553 		.ascii	"myUSB_EpStateInit\000"
- 1039      425F4570 
- 1039      53746174 
- 1039      65496E69 
- 1039      7400
- 1040              	.LASF27:
- 1041 00c3 6D795553 		.ascii	"myUSB_Dp_ClearInterrupt\000"
- 1041      425F4470 
- 1041      5F436C65 
- 1041      6172496E 
- 1041      74657272 
- 1042              	.LASF11:
- 1043 00db 666C6F61 		.ascii	"float\000"
- 1043      7400
- 1044              	.LASF7:
- 1045 00e1 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1045      206C6F6E 
- 1045      6720756E 
- 1045      7369676E 
- 1045      65642069 
- 1046              	.LASF1:
- 1047 00f8 756E7369 		.ascii	"unsigned char\000"
- 1047      676E6564 
- 1047      20636861 
- 1047      7200
- 1048              	.LASF34:
- 1049 0106 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1049      43313120 
- 1049      352E342E 
- 1049      31203230 
- 1049      31363036 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 26
+ 1033              	.LASF3:
+ 1034 004a 73686F72 		.ascii	"short unsigned int\000"
+ 1034      7420756E 
+ 1034      7369676E 
+ 1034      65642069 
+ 1034      6E7400
+ 1035              	.LASF29:
+ 1036 005d 6D795553 		.ascii	"myUSB_EpStateInit\000"
+ 1036      425F4570 
+ 1036      53746174 
+ 1036      65496E69 
+ 1036      7400
+ 1037              	.LASF27:
+ 1038 006f 6D795553 		.ascii	"myUSB_Dp_ClearInterrupt\000"
+ 1038      425F4470 
+ 1038      5F436C65 
+ 1038      6172496E 
+ 1038      74657272 
+ 1039              	.LASF11:
+ 1040 0087 666C6F61 		.ascii	"float\000"
+ 1040      7400
+ 1041              	.LASF7:
+ 1042 008d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1042      206C6F6E 
+ 1042      6720756E 
+ 1042      7369676E 
+ 1042      65642069 
+ 1043              	.LASF1:
+ 1044 00a4 756E7369 		.ascii	"unsigned char\000"
+ 1044      676E6564 
+ 1044      20636861 
+ 1044      7200
+ 1045              	.LASF34:
+ 1046 00b2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1046      43313120 
+ 1046      352E342E 
+ 1046      31203230 
+ 1046      31363036 
+ 1047 00e5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1047      20726576 
+ 1047      6973696F 
+ 1047      6E203233 
+ 1047      37373135 
+ 1048 0118 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1048      66756E63 
+ 1048      74696F6E 
+ 1048      2D736563 
+ 1048      74696F6E 
+ 1049              	.LASF24:
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 26
 
 
- 1050 0139 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1050      20726576 
- 1050      6973696F 
- 1050      6E203233 
- 1050      37373135 
- 1051 016c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1051      66756E63 
- 1051      74696F6E 
- 1051      2D736563 
- 1051      74696F6E 
- 1052              	.LASF24:
- 1053 0194 6D795553 		.ascii	"myUSB_Resume\000"
- 1053      425F5265 
- 1053      73756D65 
- 1053      00
- 1054              	.LASF14:
- 1055 01a1 72656738 		.ascii	"reg8\000"
- 1055      00
- 1056              	.LASF5:
- 1057 01a6 6C6F6E67 		.ascii	"long unsigned int\000"
- 1057      20756E73 
- 1057      69676E65 
- 1057      6420696E 
- 1057      7400
- 1058              	.LASF9:
- 1059 01b8 75696E74 		.ascii	"uint8\000"
- 1059      3800
+ 1050 0140 6D795553 		.ascii	"myUSB_Resume\000"
+ 1050      425F5265 
+ 1050      73756D65 
+ 1050      00
+ 1051              	.LASF14:
+ 1052 014d 72656738 		.ascii	"reg8\000"
+ 1052      00
+ 1053              	.LASF5:
+ 1054 0152 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1054      20756E73 
+ 1054      69676E65 
+ 1054      6420696E 
+ 1054      7400
+ 1055              	.LASF9:
+ 1056 0164 75696E74 		.ascii	"uint8\000"
+ 1056      3800
+ 1057              	.LASF36:
+ 1058 016a 433A5C55 		.ascii	"C:\\Users\\danaukes\\code\\code_psoc_photon_transpo"
+ 1058      73657273 
+ 1058      5C64616E 
+ 1058      61756B65 
+ 1058      735C636F 
+ 1059 0199 6E646572 		.ascii	"nder\\psoc\\Workspace02\\Design01.cydsn\000"
+ 1059      5C70736F 
+ 1059      635C576F 
+ 1059      726B7370 
+ 1059      61636530 
  1060              	.LASF25:
  1061 01be 656E6162 		.ascii	"enableInterrupts\000"
  1061      6C65496E 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  1072              	.LASF38:
  1073 020b 6D795553 		.ascii	"myUSB_configuration\000"
  1073      425F636F 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 27
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 27
 
 
  1073      6E666967 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 1
  1097 02a4 656E6162 		.ascii	"enableState\000"
  1097      6C655374 
  1097      61746500 
-ARM GAS  C:\Users\danaukes\AppData\Local\Temp\cc96FKVj.s 			page 28
+ARM GAS  C:\Users\danaukes\AppData\Local\Temp\ccQzO618.s 			page 28
 
 
  1098              	.LASF16:
