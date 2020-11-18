@@ -125,7 +125,7 @@ int main(void)
         }
         
         //clear_buf(txdata,100);
-        l=sprintf( txdata, "Hello! %ld\r\n", lval);
+        l=sprintf( txdata, "lval = %ld\r\n", lval);
                 
         while (!myUSB_CDCIsReady());
             //put character in
