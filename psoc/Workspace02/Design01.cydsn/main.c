@@ -79,61 +79,86 @@ int main(void)
             c = UART_photon_GetChar();
 
             //make a decision based on the character received
-                //if you get newline characters, reset the counter, you are going to receive a new message
+            //if you get newline characters, reset the counter, you are going to receive a new message
             if(c=='\n' || c=='\r')
             {
+                //don't process rxdata buffer
                 read_val = 0;
+                //clear the rxdata buffer
                 clear_buf(rxdata,100);
+                //reset the ii counter
                 ii=0;
             }
+            //if you get terminating characters, stop reading into your rx buffer and process the incoming number.
             else if(c==';' || c=='.')
             {
+                //process rxdata buffer
                 read_val = 1;
+                //reset the ii counter
                 ii=0;
                 break;
             }
+            //otherwise, add the character to your rxdata buffer and increment your ii counter.
             else
             {
+                //don't process rxdata buffer
                 read_val = 0;
+                //save c into rxdata buffer
                 rxdata[ii]=c;
+                //increment the ii counter
                 ii++;
             }
         }
-        
+        //check if read_val value is nonzero
         if (read_val!=0)
         {
+            //read the first character of the rxdata buffer.  If it is an l, process it as a long int.
             if (rxdata[0]=='l')
             {
+                //clear out the next character in rxdata to ensure it's treated as an end of line.
                 rxdata[ii]=0;
+                //convert string in rxdata to a long int, starting with the first character after the 0th position
                 lval = strtol( rxdata+1, &ptr, 10 );    // convert message to an integer
+                //clear the rxdata buffer
                 clear_buf(rxdata,100);
+                //reset the ii counter
                 ii=0;
                 
             }
             
         }
 
+        //reset the read_val variable
         read_val = 0;
         
+        //turn LED on if lval is greater than 50.
         if (lval>50)
         {
             Pin_1_Write(1);
         }
+        //turn LED off if lval is less than 50.
         else
         {
             Pin_1_Write(0);
         }
         
+        //clear the txdata buffer
         //clear_buf(txdata,100);
+        //write lval to txdata
         l=sprintf( txdata, "lval = %ld\r\n", lval);
-                
-        while (!myUSB_CDCIsReady());
-            //put character in
+
+
+        //only update every 100 cycles
         if (kk==100)
         {
+            //wait until USB system is ready
+            while (!myUSB_CDCIsReady());
+            //write txdata to USB
             myUSB_PutString(txdata);
+            //reset kk counter
             kk=0;
         }
+        //increment kk counter
         kk++;
 
     }
