@@ -27,7 +27,7 @@ char c=0;
 long t_last_send = 0;
 
 //keepalive time should be larger than rate lmit.
-const int keepalive_time = 10;
+const int keepalive_time = 30;
 
 //rate limit should be on the order of a second
 const int rate_limit = 1;
