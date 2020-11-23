@@ -26,6 +26,15 @@ char c=0;
 //store the last send time
 long t_last_send = 0;
 
+//keepalive time should be larger than rate lmit.
+const int keepalive_time = 10;
+
+//rate limit should be on the order of a second
+const int rate_limit = 1;
+
+//define the last message type
+int last_type = 0;
+
 //store the last send time
 long t_reconnect = 0;
 
@@ -105,12 +114,19 @@ void loop() {
             //Serial.write(message_out_usb);
             //Serial.write("\r\n");
             
-            //Publish the message to the MQTT client
-            client.publish(topic_publish,message_out_usb);
-
-            //record the last send time as now
-            t_last_send = Time.now();
             
+            if (((Time.now()-t_last_send)>rate_limit) ||  (last_type==1))
+            {
+                //Publish the message to the MQTT client
+                client.publish(topic_publish,message_out_usb);
+    
+                //record the last send time as now
+                t_last_send = Time.now();
+
+                //last type was a general message
+                last_type =0 ;
+            }
+
             //reset my internal counter
             ii_usb=0;
             
@@ -151,12 +167,18 @@ void loop() {
             //Serial1.write(message_out_rxtx);
             //Serial1.write("\r\n");
 
-            //Publish the message to the MQTT client
-            client.publish(topic_publish,message_out_rxtx);
+            if (((Time.now()-t_last_send)>rate_limit) ||  (last_type==1))
+            {
+                //Publish the message to the MQTT client
+                client.publish(topic_publish,message_out_rxtx);
+    
+                //record the last send time as now
+                t_last_send = Time.now();
 
-            //record the last send time as now
-            t_last_send = Time.now();
-
+                //last type was a general message
+                last_type =0 ;
+            }
+            
             //reset my internal counter
             ii_rxtx=0;
 
@@ -180,13 +202,16 @@ void loop() {
     //if the current time is greater than 10 seconds since last send,
     if (client.isConnected())
     {
-        if ((Time.now()-t_last_send)>10)
+        if ((Time.now()-t_last_send)>keepalive_time)
         {   
             //send a keepalive message
             client.publish(topic_publish,"keepalive");
             
             //update last-sent time
             t_last_send = Time.now();
+            
+            //last type was a keepalive
+            last_type =1 ;
         }
     }
     else
