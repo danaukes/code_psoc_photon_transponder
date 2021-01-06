@@ -24,7 +24,7 @@ my_client = mqtt.Client("EGR_304_Python_Listener_XYZ")
 def connect(my_client):
 
     # Connect to a test MQTT broker
-    my_client.connect("idealab.ddns.net", 1883)	
+    my_client.connect("egr314.ddns.net", 1883)	
     
     # Subscribe to the topic "EGR_304_XYZ"
     my_client.subscribe("EGR_304_XYZ")			

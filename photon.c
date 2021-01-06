@@ -39,7 +39,7 @@ int last_type = 0;
 long t_reconnect = 0;
 
 //MQTT Client Class
-MQTT client("idealab.ddns.net", 1883, 30, callback);
+MQTT client("egr314.ddns.net", 1883, 30, callback);
 
 //declare the callback that fires when a subscribed topic comes in
 void callback(char* topic, byte* payload, unsigned int length) 

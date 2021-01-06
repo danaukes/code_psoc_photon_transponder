@@ -16,7 +16,7 @@ import time
 my_client = mqtt.Client("EGR_304_Python_Publisher_XYZ")		
 
 # Connect to a test MQTT broker
-my_client.connect("idealab.ddns.net", 1883)	
+my_client.connect("egr314.ddns.net", 1883)	
 
 while(True):
     # Sleep for a second
